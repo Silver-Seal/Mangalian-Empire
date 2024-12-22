@@ -1,7 +1,0 @@
-
-# MAIN THEME
-music = {
-	name = "maintheme"
-	file = "traditional_serbian_chant_ps_135.ogg"
-	volume = 1
-}
