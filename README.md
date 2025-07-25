@@ -7,4 +7,4 @@ The current version of the mod on GitHub is not playable, as the 1.16 update cha
 Countries, ideas, decisions, and AI logic need to be added, as well as some completed focus trees that just need to get pushed to the repository. 
 
 
-If you would like to test the mod, clone the repository and place it into Documents\Paradox Interactive\Hearts of Iron IV\mod, and change the %user to the windows account name account name then the game should detect it.
+If you would like to test the mod, clone the repository and place it into Documents\Paradox Interactive\Hearts of Iron IV\mod, and change the %user% to the windows account name account name then the game should detect it.
