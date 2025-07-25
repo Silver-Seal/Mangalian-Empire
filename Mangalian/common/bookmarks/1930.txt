@@ -7,7 +7,7 @@ bookmarks = {
 		default_country = "MMG"
 	
 		FRA = {
-			history = FRA_BLITZKRIEG_DESC
+			history = FRA_1930_DESC
 			ideology = democratic
 			ideas={
 				FRA_victors_of_wwi
@@ -21,7 +21,7 @@ bookmarks = {
 			}
 		}
 		USA = {
-			history = USA_BLITZKRIEG_DESC
+			history = USA_1930_DESC
 			ideology = democratic
 			ideas = {
 				home_of_the_free
@@ -37,7 +37,7 @@ bookmarks = {
 			}
 		}
 		ENG = {
-			history = ENG_BLITZKRIEG_DESC
+			history = ENG_1930_DESC
 			ideology = democratic
 			ideas = {
 				stiff_upper_lip
@@ -54,7 +54,7 @@ bookmarks = {
 			
 		}
 		GER = {
-			history = GER_BLITZKRIEG_DESC
+			history = GER_1930_DESC
 			ideology = fascism
 			ideas = { #TODO_Danne Make sure these spirits display the proper numbers!
 				GER_mefo_bills_1939_fake_ns
@@ -68,7 +68,7 @@ bookmarks = {
 			}
 		}
 		ITA = {
-			history = ITA_BLITZKRIEG_DESC
+			history = ITA_1930_DESC
 			ideology = fascism
 			ideas={
 				vittorio_emanuele_albania_ethiopia
@@ -82,7 +82,7 @@ bookmarks = {
 			}			
 		}
 		JAP = {
-			history = JAP_BLITZKRIEG_DESC
+			history = JAP_1930_DESC
 			ideology = fascism
 			ideas={
 				state_shintoism
@@ -96,7 +96,7 @@ bookmarks = {
 			}		
 		}
 		SOV = {
-			history = SOV_BLITZKRIEG_DESC
+			history = SOV_1930_DESC
 			ideology = communism
 			ideas = {
 				SOV_anti_soviet_military_thinking_banned_navy
@@ -111,14 +111,14 @@ bookmarks = {
 		}
 
 		"---"={
-			history = "OTHER_BLITZKRIEG_DESC"
+			history = "OTHER_1930_DESC"
 		}
 
 		# minors from DLC ####
 		
 		"AST"={
 			minor = yes
-			history = "AST_BLITZKRIEG_DESC"
+			history = "AST_1930_DESC"
 			ideology = democratic
 			ideas = {
 				AST_great_depression_1
@@ -131,7 +131,7 @@ bookmarks = {
 		}
 		"SAF"={
 			minor = yes
-			history = "SAF_BLITZKRIEG_DESC"
+			history = "SAF_1930_DESC"
 			ideology = democratic
 			ideas = {
 				SAF_ossewabrandwag
@@ -145,7 +145,7 @@ bookmarks = {
 		}
 		"RAJ"={
 			minor = yes
-			history = "RAJ_BLITZKRIEG_DESC"
+			history = "RAJ_1930_DESC"
 			ideology = neutrality
 			ideas = {
 				RAJ_agrarian_society
@@ -160,7 +160,7 @@ bookmarks = {
 
 		"CHI"={
 			minor = yes
-			history = "CHI_BLITZKRIEG_DESC"
+			history = "CHI_1930_DESC"
 			ideology = neutrality
 			ideas = {
 				CHI_army_corruption_2
@@ -175,7 +175,7 @@ bookmarks = {
 		}
 		"PRC"={
 			minor = yes
-			history = "PRC_BLITZKRIEG_DESC"
+			history = "PRC_1930_DESC"
 			ideology = communism
 			ideas = {
 				PRC_the_long_march_1
@@ -190,7 +190,7 @@ bookmarks = {
 		}
 		"MAN"={
 			minor = yes
-			history = "MAN_BLITZKRIEG_DESC"
+			history = "MAN_1930_DESC"
 			ideology = fascism
 			ideas = {
 				MAN_kwantung_veto
@@ -206,7 +206,7 @@ bookmarks = {
 
 		"GXC"={
 			minor = yes
-			history = "WARLORDS_BLITZKRIEG_DESC"
+			history = "WARLORDS_1930_DESC"
 			ideology = fascism
 			ideas = {
 				CHI_long_term_economic_planning
@@ -219,7 +219,7 @@ bookmarks = {
 		}		
 		"YUN"={
 			minor = yes
-			history = "WARLORDS_BLITZKRIEG_DESC"
+			history = "WARLORDS_1930_DESC"
 			ideology = fascism
 			ideas = {
 				CHI_long_term_economic_planning
@@ -232,7 +232,7 @@ bookmarks = {
 		}		
 		"XSM"={
 			minor = yes
-			history = "WARLORDS_BLITZKRIEG_DESC"
+			history = "WARLORDS_1930_DESC"
 			ideology = fascism
 			ideas = {
 				CHI_long_term_economic_planning
@@ -245,7 +245,7 @@ bookmarks = {
 		}		
 		"SIK"={
 			minor = yes
-			history = "WARLORDS_BLITZKRIEG_DESC"
+			history = "WARLORDS_1930_DESC"
 			ideology = fascism
 			ideas = {
 				CHI_long_term_economic_planning
@@ -261,7 +261,7 @@ bookmarks = {
 
 		"MEX"={
 			minor = yes
-			history = "MEXICO_BLITZKRIEG_DESC"
+			history = "MEXICO_1930_DESC"
 			ideology = neutrality
 			ideas = {
 				MEX_church_power_1
@@ -278,7 +278,7 @@ bookmarks = {
 
 		"HOL"={
 			minor = yes
-			history = "NETHERLANDS_BLITZKRIEG_DESC"
+			history = "NETHERLANDS_1930_DESC"
 			ideology = democratic
 			ideas = {
 				HOL_wilhelmina
@@ -294,7 +294,7 @@ bookmarks = {
 
 		"SPR"={
 			minor = yes
-			history = "SPAIN_BLITZKRIEG_DESC"
+			history = "SPAIN_1930_DESC"
 			ideology = fascism
 			ideas = {
 				SPA_carlism_4
@@ -309,7 +309,7 @@ bookmarks = {
 
 		"GRE"={
 			minor = yes
-			history = "GRE_BLITZKRIEG_DESC"
+			history = "GRE_1930_DESC"
 			ideology = neutrality
 			ideas = {
 				GRE_metaxism_2
@@ -325,7 +325,7 @@ bookmarks = {
 
 		"TUR"={
 			minor = yes
-			history = "TUR_BLITZKRIEG_DESC"
+			history = "TUR_1930_DESC"
 			ideology = neutrality
 			ideas = {
 				TUR_kemalist_army_officers_extended_power_neutral
@@ -341,7 +341,7 @@ bookmarks = {
 
 		"POL"={
 			minor = yes
-			history = "POL_BLITZKRIEG_DESC"
+			history = "POL_1930_DESC"
 			ideology = neutrality
 			ideas = {
 				deterrence
@@ -354,7 +354,7 @@ bookmarks = {
 		}
 		"SWI"={
 			minor = yes
-			history = "SWI_BLITZKRIEG_DESC"
+			history = "SWI_1930_DESC"
 			ideology = democratic
 			ideas = {
 				SWI_spirit_of_helvetia_aggressive_war
@@ -369,7 +369,7 @@ bookmarks = {
 		}
 		FIN={
 			minor = yes
-			history = FIN_BLITZKRIEG_DESC
+			history = FIN_1930_DESC
 			ideology = neutrality
 			ideas = {
 				FIN_sisu_3
@@ -384,7 +384,7 @@ bookmarks = {
 		}
 		SWE={
 			minor = yes
-			history = "SWE_BLITZKRIEG_DESC"
+			history = "SWE_1930_DESC"
 			ideology = democratic
 			available = { has_dlc = "Arms Against Tyranny" } 
 			ideas = {
@@ -400,7 +400,7 @@ bookmarks = {
 		}
 		DEN={
 			minor = yes
-			history = DEN_BLITZKRIEG_DESC
+			history = DEN_1930_DESC
 			ideology = democratic
 			available = { NOT = { has_dlc = "By Blood Alone" } }
 			ideas = {
@@ -416,7 +416,7 @@ bookmarks = {
 		}
 		DEN={
 			minor = yes
-			history = DEN_BLITZKRIEG_DESC
+			history = DEN_1930_DESC
 			ideology = democratic
 			available = { has_dlc = "By Blood Alone" }
 			ideas = {
@@ -432,7 +432,7 @@ bookmarks = {
 		}
 		BRA = {
 			minor = yes
-			history = BRA_BLITZKRIEG_DESC
+			history = BRA_1930_DESC
 			ideology = neutrality
 			available = { has_dlc = "Trial of Allegiance" }
 			ideas = {
@@ -448,7 +448,7 @@ bookmarks = {
 		}
 		ARG = {
 			minor = yes
-			history = ARG_BLITZKRIEG_DESC
+			history = ARG_1930_DESC
 			ideology = neutrality
 			available = { has_dlc = "Trial of Allegiance" }
 			ideas = {
@@ -465,7 +465,7 @@ bookmarks = {
 
 		COG = {
 			minor = yes
-			history = COG_BLITZKRIEG_DESC
+			history = COG_1930_DESC
 			ideology = neutrality
 			available = { has_dlc = "Gotterdammerung" } 
 			ideas = {

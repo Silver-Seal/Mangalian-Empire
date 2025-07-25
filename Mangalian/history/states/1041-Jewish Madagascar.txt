@@ -1,0 +1,29 @@
+state={
+	id=1041
+	name="STATE_1041"
+	
+		history={
+		add_core_of = ISR
+		add_claim_by = MAD
+		owner = ISR
+		victory_points = {
+			5128 1
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 1
+			5222 = {
+				naval_base = 1
+			}
+		}
+
+	}
+	
+	provinces={
+		5128 10993 5222
+	}
+	manpower=5632874
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

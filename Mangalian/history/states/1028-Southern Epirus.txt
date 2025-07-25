@@ -1,0 +1,30 @@
+state={
+	id=1028
+	name="STATE_1028"
+	
+	resources={
+		chromium = 10 # was: 20
+		steel = 6 # was: 20
+	}
+	
+	history={
+		victory_points = {
+			1205 1
+		}
+		owner = GRE
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 3
+		}
+		add_core_of = GRE
+	}
+	
+	provinces={
+		9916 11786 11895 12001 1205 1106
+	}
+	manpower=350725
+	buildings_max_level_factor=1.000
+	state_category = rural
+	local_supplies=9.000
+}
