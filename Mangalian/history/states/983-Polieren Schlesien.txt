@@ -1,0 +1,24 @@
+state={
+	id=983
+	name="STATE_983"
+	provinces={
+		6462 3283 3510 9470
+	}
+	history = {
+
+		owner = POL
+		add_core_of = POL
+		add_claim_by = GER
+		
+		victory_points = {
+			3510 1
+		}
+		buildings = {
+			infrastructure = 3
+		}
+	}
+	manpower=406742
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

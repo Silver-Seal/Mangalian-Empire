@@ -1,0 +1,25 @@
+state={
+	id=995
+	name="STATE_995"
+	
+		history={
+		owner = SOV
+		victory_points = {
+			11452 1
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+		}
+		add_core_of = SOV
+		add_claim_by = UKR
+	}
+	
+	provinces={
+		11452 486 472 453 9463 9479
+	}
+	manpower=784390
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}

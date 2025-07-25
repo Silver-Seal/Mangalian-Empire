@@ -1,0 +1,32 @@
+state = {
+	id = 245
+	name = "STATE_245" # Millerovo
+	manpower = 461769
+	
+	state_category = rural
+
+	history =  {
+
+		owner = SOV
+		add_core_of = SOV
+
+		buildings = {
+			infrastructure = 3 #was: 5
+
+			# Tsimlyanskoye Hydroelectric Station
+			#6490 = { dam = 1 }
+			
+		}
+		
+		victory_points = {
+			11476 1 # Millerovo
+		}
+
+	}
+
+	provinces = {
+		3519 3540 9488 9565 11459 11476 
+	}
+
+	local_supplies = 8.0 
+}
