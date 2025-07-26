@@ -1,0 +1,34 @@
+
+state={
+	id=377
+	name="STATE_377"
+	manpower = 435572
+	
+	state_category = rural
+	
+	resources={
+		steel=20 # was: 40
+		oil=5 # was: 10
+		aluminium=8 # was: 16
+	}
+
+	history={
+		owner = USA
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+		}
+		add_core_of = USA
+		victory_points = {
+			4975 1
+		}
+
+	}
+
+	provinces={
+		850 6897 7821 10573 12765 10645 1972 12552 10642 4975 3883 8070 12684 2102 10867 12720
+	}
+
+	local_supplies=8.0 
+}

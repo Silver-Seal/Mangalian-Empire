@@ -1,0 +1,29 @@
+state={
+	id=1027
+	name="STATE_1027"
+	
+	history={
+		owner = FRA
+		add_core_of = FRA
+		add_claim_by = ALG
+
+		victory_points = {
+			1145 5 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 5
+			1145 = {
+				naval_base = 2
+			}
+		}
+	}
+	
+	provinces={
+		1145 
+	}
+	manpower=250837
+	buildings_max_level_factor=1.000
+	state_category = large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+
+state = {
+	id = 852
+	name = "STATE_852" 
+	manpower = 665850 
+
+	state_category = town 
+
+
+	history = {
+		owner = ITA
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+		}
+		add_core_of = ITA
+		add_core_of = YUG
+	}
+
+	provinces = {
+		11735
+	}
+
+	local_supplies = 0.0 
+}

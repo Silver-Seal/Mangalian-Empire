@@ -1,0 +1,30 @@
+state={
+	id=215
+	name="STATE_215"
+	resources={
+		steel=30 # was: 52.000
+	}
+
+	history={
+		owner = SOV
+		
+		victory_points = {
+			11038 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+	}
+
+	provinces={
+		86 94 155 170 176 3008 3078 3189 6021 6029 6090 6159 9045 9055 9195 11045 11094 11175 11212 13130 3 3086 18 11038
+	}
+	manpower=114858
+	
+	state_category = rural
+	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
+}
