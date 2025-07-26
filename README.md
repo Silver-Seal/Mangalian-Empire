@@ -8,3 +8,5 @@ Countries, ideas, decisions, and AI logic need to be added, as well as some comp
 
 
 If you would like to test the mod, clone the repository and place it into Documents\Paradox Interactive\Hearts of Iron IV\mod, and change the %user% to the windows account name account name then the game should detect it.
+
+This is the dev branch were changes can be made.
