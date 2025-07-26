@@ -22,6 +22,5 @@ replace_path="common/national_focus"
 #replace_path="common/ai_strategy_plans"
 #replace_path="common/scripted_diplomatic_actions"
 #replace_path="common/decisions"
-
 #replace_path="common/ideas"
 supported_version="1.16.*"
