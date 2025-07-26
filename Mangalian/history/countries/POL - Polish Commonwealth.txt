@@ -1,0 +1,37 @@
+﻿capital = 1
+# Recruit Characters
+oob = "POL_1930"
+starting_train_buffer = 10
+set_research_slots = 3
+set_stability = 20
+set_war_support = 70
+add_command_power = 20
+set_convoys = 100
+
+# Faction
+create_faction = "Intermarium Pact"
+add_to_faction = CZE
+
+# Politics for 1930.1.1
+set_politics = {
+	ruling_party = Monarchism
+	last_election = "1926.3.17"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	ultranationalism = 20
+	socialism = 0
+	monarchism = 50
+	democratic = 10
+	despotism = 20
+
+}
+# Government/National Spirits
+add_ideas = {
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	civilian_economy
+}
+

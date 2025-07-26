@@ -1,0 +1,26 @@
+ideologies = {
+	ultranationalism = {
+		types = {
+			ultramilitarism = { can_be_randomly_selected = no }
+			fundamentalism = {  }
+			national_bolshevism = {  }
+			chiangism = { can_be_randomly_selected = no }
+			ethnonationalism = { can_be_randomly_selected = no }
+		}
+		dynamic_faction_names = {
+		}
+		color = { 0 0 0 }
+		faction_modifiers = {
+		}
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+		}
+		modifiers = {
+		}
+		ai_neutral = yes
+	}
+}

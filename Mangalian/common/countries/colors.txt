@@ -1,0 +1,34 @@
+
+#Custom colours start here
+ITA = {
+	color = rgb { 21 31 47 }
+	color_ui = rgb { 21 31 47 }
+}
+MAN = {
+	color = rgb { 255 39 63 }
+	color_ui = rgb { 255 39 63 }
+}
+SOV = {
+	color = rgb { 100 169 0 }
+	color_ui = rgb { 100 169 0 }
+}
+POL = {
+	color = rgb { 255 82 42 }
+	color_ui = rgb { 255 82 42 }
+}
+COL = {
+	color = rgb { 239 177 49 }
+	color_ui = rgb { 239 177 49 }
+}
+RUS = {
+	color = rgb { 0 35 0 }
+	color_ui = rgb { 0 35 0 }
+}
+MEX = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}
+KAE = {
+	color = rgb { 0 0 0 }
+	color_ui = rgb { 0 0 0 }
+}

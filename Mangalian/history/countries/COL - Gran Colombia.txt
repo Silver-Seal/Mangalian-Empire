@@ -1,0 +1,37 @@
+﻿capital = 1
+# Recruit Characters
+oob = "COL_1930"
+starting_train_buffer = 50
+set_research_slots = 3
+set_stability = 40
+set_war_support = 50
+add_command_power = 20
+set_convoys = 20
+
+# Research
+set_technology = {
+	superior_firepower = 1
+}
+# Politics for 1930.1.1
+set_politics = {
+	ruling_party = despotism
+	last_election = "1934.1.1"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	ultranationalism = 20
+	socialism = 20
+	monarchism = 20
+	democratic = 20
+	despotism = 20
+}
+# Government/National Spirits
+add_ideas = {
+	all_adults_serve
+	extensive_conscription
+	limited_conscription
+	volunteer_only
+	low_economic_mobilisation
+}
+

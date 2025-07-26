@@ -1,0 +1,119 @@
+﻿l_english: 
+POL_the_future_of_a_nation:0 "The Future of a Nation"
+POL_the_future_of_a_nation_desc:0 "*This will be the first focus after the president dies to choose the next direction of the country"
+POL_preparing_for_the_election:0 "Preparing for the Election"
+POL_preparing_for_the_election_desc:0 "After this, you choose a path, and the subsequent options will prepare you to win the election on 3.17.2025"
+POL_continuegrabskisdream:0 "Continue Grabski's Dream"
+POL_continuegrabskisdream_desc:0 "Elect a democratic reformer and continue on the former president's path"
+POL_cultural_supremacy:0 "Cultural Supremacy"
+POL_cultural_supremacy_desc:0 "Eventually, choose between Polish and Lithuanian"
+POL_the_people_will_take_control:0 "The People Will Take Control"
+POL_the_people_will_take_control_desc:0 "Socialist path"
+POL_undograbskisprogress:0 "Undo Grabski's Progress"
+POL_undograbskisprogress_desc:0 "Monarchist path where you elect Mindaugas II/give more power."
+POL_rallysupportbehindwladyslawsikorski:0 "Rally Support Behind Władysław Sikorski"
+POL_rallysupportbehindwladyslawsikorski_desc:0 "temp"
+POL_empowerpilsudski:0 "Empower Piłsudski"
+POL_empowerpilsudski_desc:0 "Józef Piłsudski becomes leader of the party\nPromote Polish military dominance\nSuppress Lithuanian influence"
+POL_empower_the_iron_wolf:0 "Empower the Iron Wolf"
+POL_empower_the_iron_wolf_desc:0 "Augustinas Voldemaras becomes leader of the party\nFocus on Lithuanian cultural expansion\nSuppress Polish influence"
+POL_secure_dominant_leadership:0 "Secure Dominant Leadership"
+POL_secure_dominant_leadership_desc:0 "Focus on nationalist propaganda\nPrioritize ethnic military recruitment"
+POL_strengthen_national_identity:0 "Strengthen National Identity"
+POL_strengthen_national_identity_desc:0 "Fortify Polish-Lithuanian cultural dominance\nEncourage national pride campaigns"
+POL_revive_the_crown:0 "Revive the Crown"
+POL_revive_the_crown_desc:0 "Restore historical ties to monarchy\nPromote royalist ideals"
+POL_empower_mindaugas_ii:0 "Empower Mindaugas II"
+POL_empower_mindaugas_ii_desc:0 "Mindaugas II crowned King of the Commonwealth\nStrengthen aristocratic rule"
+POL_absolute_monarchy:0 "Absolute Monarchy"
+POL_absolute_monarchy_desc:0 "Strengthen royal powers\nSuppress parliamentary influence"
+POL_royal_constitutional_reform:0 "Royal Constitutional Reform"
+POL_royal_constitutional_reform_desc:0 "Balance monarch power with democratic reforms\nIntroduce a new constitution"
+POL_statecontrolled_economy_and_country:0 "State-Controlled Economy and Country"
+POL_statecontrolled_economy_and_country_desc:0 "Heavy industry focus\nMilitary buildup"
+POL_pushtoelectantanassnieckus:0 "Push to Elect Antanas Sniečkus"
+POL_pushtoelectantanassnieckus_desc:0 "Establish socialist leadership\nFocus on social equality and economic reform"
+POL_workersunite:0 "Workers Unite!"
+POL_workersunite_desc:0 "Encourage union growth\nNationalize key industries"
+POL_collectivist_reform:0 "Collectivist Reform"
+POL_collectivist_reform_desc:0 "Focus on agricultural collectivization\nEmpower regional soviets"
+POL_cultural_unity:0 "Cultural Unity"
+POL_cultural_unity_desc:0 "Maintain the current democratic system\nIntroduce incremental reforms"
+POL_transition_to_full_democracy:0 "Transition to Full Democracy"
+POL_transition_to_full_democracy_desc:0 "Expand voting rights\nDecentralize power to local governments"
+POL_whatpathwillthenationtake:0 "What Path will the Nation take?"
+POL_whatpathwillthenationtake_desc:0 "WIP"
+POL_increase_the_security_of_the_election:0 "Increase the Security of the Election"
+POL_increase_the_security_of_the_election_desc:0 "WIP"
+POL_the_legacy_of_the_reformer:0 "The Legacy of the Reformer"
+POL_the_legacy_of_the_reformer_desc:0 "WIP"
+POL_the_people_will_decide_the_future:0 "The People will Decide the Future"
+POL_the_people_will_decide_the_future_desc:0 "WIP"
+POL_the_deciding_day:0 "The Deciding Day"
+POL_the_deciding_day_desc:0 "WIP"
+POL_rally_behind_the_monarch:0 "Rally Behind the Monarch"
+POL_rally_behind_the_monarch_desc:0 "WIP"
+POL_a_ruling_culture:0 "A Ruling Culture"
+POL_a_ruling_culture_desc:0 "WIP"
+POL_holdontograbskisideals:0 "Hold Onto Grabski's Ideals"
+POL_holdontograbskisideals_desc:0 "WIP"
+POL_the_price_of_bread:0 "The Price of Bread"
+POL_the_price_of_bread_desc:0 "WIP"
+POL_revitalize_the_commonwealth_economy:0 "Revitalize the Commonwealth Economy"
+POL_revitalize_the_commonwealth_economy_desc:0 "Start of Economic"
+POL_postgrabski_recovery:0 "Post-Grabski Recovery"
+POL_postgrabski_recovery_desc:0 "Stabilize markets after leadership vacuum\nImplement emergency economic measures"
+POL_industrial_development_path:0 "Industrial Development Path"
+POL_industrial_development_path_desc:0 "WIP"
+POL_agricultural_modernization_path:0 "Agricultural Modernization Path"
+POL_agricultural_modernization_path_desc:0 "WIP"
+POL_grain_for_the_commonwealth:0 "Grain for the Commonwealth"
+POL_grain_for_the_commonwealth_desc:0 "Increase grain output for export\nStockpile for emergencies"
+POL_support_rural_farmers:0 "Support Rural Farmers"
+POL_support_rural_farmers_desc:0 "Subsidize small farms\nEncourage mechanization"
+POL_trade_and_investments:0 "Trade and Investments"
+POL_trade_and_investments_desc:0 "WIP"
+POL_education_and_innovation:0 "Education and Innovation"
+POL_education_and_innovation_desc:0 "WIP"
+POL_land_redistribution_program:0 "Land Redistribution Program"
+POL_land_redistribution_program_desc:0 "Break up elite estates\nDistribute land to peasants"
+POL_strategic_infrastructure_development:0 "Strategic Infrastructure Development"
+POL_strategic_infrastructure_development_desc:0 "Upgrade railways\nConnect Polish and Lithuanian regions"
+POL_expand_domestic_industry:0 "Expand Domestic Industry"
+POL_expand_domestic_industry_desc:0 "Build civilian factories\nBoost steel production"
+POL_reinforce_military_industry:0 "Reinforce Military Industry"
+POL_reinforce_military_industry_desc:0 "Construct military factories\nModernize weapons"
+POL_invite_foreign_investors:0 "Invite Foreign Investors"
+POL_invite_foreign_investors_desc:0 "Attract Western capital\nDevelop banking sector"
+POL_baltic_trade_expansion:0 "Baltic Trade Expansion"
+POL_baltic_trade_expansion_desc:0 "Improve port facilities\nEstablish trade routes via Baltic Sea"
+POL_form_the_baltic_trade_league:0 "Form the Baltic Trade League"
+POL_form_the_baltic_trade_league_desc:0 "Create economic bloc with Baltic neighbors\nReduced tariffs and shared markets"
+POL_rebuild_universities:0 "Rebuild Universities"
+POL_rebuild_universities_desc:0 "Fund science"
+POL_national_research_bureaus:0 "National Research Bureaus"
+POL_national_research_bureaus_desc:0 "Boost tech development\nEncourage military and industrial innovation"
+POL_institute_crop_rotation:0 "Institute Crop Rotation"
+POL_institute_crop_rotation_desc:0 "WIP"
+POL_temp:0 "temp"
+POL_temp_desc:0 "WIP"
+POL_an_iron_legion_for_the_iron_wolf:0 "An Iron Legion for the Iron Wolf"
+POL_an_iron_legion_for_the_iron_wolf_desc:0 "WIP Needs to require the Iron wolf party in power"
+POL_a_nation_renewed:0 "A Nation Renewed"
+POL_a_nation_renewed_desc:0 "WIP"
+POL_develop_lithuanian_central_lowland_farming:0 "Develop Lithuanian Central Lowland Farming"
+POL_develop_lithuanian_central_lowland_farming_desc:0 "WIP"
+POL_vilniuswillbethecapital:0 "Vilnius will be the Capital!"
+POL_vilniuswillbethecapital_desc:0 "Move the capital to Vilnius"
+POL_temp:0 "temp"
+POL_temp_desc:0 "WIP"
+POL_temp:0 "temp"
+POL_temp_desc:0 "Wip"
+POL_lithuania_is_our_homeland:0 "Lithuania is our Homeland"
+POL_lithuania_is_our_homeland_desc:0 "WIP"
+POL_topple_the_commonwealth:0 "Topple the Commonwealth"
+POL_topple_the_commonwealth_desc:0 "WIP"
+POL_we_can_peacefully_resolve_the_question_of_union:0 "We can Peacefully Resolve the Question of Union"
+POL_we_can_peacefully_resolve_the_question_of_union_desc:0 "WIP"
+POL_blood_will_be_spilled:0 "Blood will be Spilled"
+POL_blood_will_be_spilled_desc:0 "WIP"
