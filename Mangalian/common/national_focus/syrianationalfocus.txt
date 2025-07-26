@@ -1,0 +1,871 @@
+focus_tree = {
+	id = syrianationalfocus
+	continuous_focus_position = { x = -40 y = 2090 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SYR
+		}
+	}
+	#Presidential System, Assadist Government
+	focus = {
+		id = SYR_presidentialsystemassadistgovernment
+		icon = GFX_SYR_presidentialsystemassadistgovernment-262036
+		x = 4
+		y = 8
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_reorganize_cabinet  }
+	}
+
+	#Increase University Funding
+	focus = {
+		id = SYR_increase_university_funding
+		icon = GFX_SYR_increase_university_funding-645529
+		x = 18
+		y = 0
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#Mandate Schooling
+	focus = {
+		id = SYR_mandate_schooling
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 20
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_combat_illiteracy  }
+	}
+
+	#Analyze Past Conflicts
+	focus = {
+		id = SYR_analyze_past_conflicts
+		icon = GFX_SYR_analyze_past_conflicts-645703
+		x = 17
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_establish_military_academy  }
+	}
+
+	#Predict Future Conflicts
+	focus = {
+		id = SYR_predict_future_conflicts
+		icon = GFX_goal_generic_military_sphere
+		x = 15
+		y = 2
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_establish_military_academy  }
+	}
+
+	#Beneath The Beating Sun
+	focus = {
+		id = SYR_beneath_the_beating_sun
+		icon = GFX_focus_por_luso_tropicalism
+		x = 11
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SYR_royal_arab_army  }
+	}
+
+	#Camelry Corps
+	focus = {
+		id = SYR_camelry_corps
+		icon = GFX_SYR_camelry_corps-645902
+		x = 13
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_beneath_the_beating_sun  }
+	}
+
+	#Seize Uruguay From Brazil
+	focus = {
+		id = SYR_seize_uruguay_from_brazil
+		icon = GFX_SYR_seize_uruguay_from_brazil-645511
+		x = 4
+		y = 9
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SYR_presidentialsystemassadistgovernment  }
+	}
+
+	#Establish Military Academy
+	focus = {
+		id = SYR_establish_military_academy
+		icon = GFX_focus_generic_military_academy
+		x = 16
+		y = 1
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SYR_royal_arab_army  } prerequisite = { focus = SYR_increase_university_funding  }
+	}
+
+	#Royal Arab Army
+	focus = {
+		id = SYR_royal_arab_army
+		icon = GFX_SYR_royal_arab_army-645941
+		x = 11
+		y = 0
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+	}
+
+	#Employ Kurdish Ministers
+	focus = {
+		id = SYR_employ_kurdish_ministers
+		icon = GFX_goal_unknown
+		x = 7
+		y = 8
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_develop_new_syria  }
+	}
+
+	#No Anglos, No Russians, No Imperialism
+	focus = {
+		id = SYR_noanglosnorussiansnoimperialism
+		icon = GFX_focus_jap_cast_the_die
+		x = 1
+		y = 10
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_proclaim_united_arab_republic  focus = SYR_break_up_persian_entity  }
+	}
+
+	#Modernization of the Armed Forces
+	focus = {
+		id = SYR_modernization_of_the_armed_forces
+		icon = GFX_focus_chi_army_reform
+		x = 11
+		y = 2
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_beneath_the_beating_sun  }
+	}
+
+	#Incite Turkish Revolution
+	focus = {
+		id = SYR_incite_turkish_revolution
+		icon = GFX_SYR_incite_turkish_revolution-645722
+		x = 0
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SYR_revive_the_young_turks  }
+	}
+
+	#Hatay Intervention
+	focus = {
+		id = SYR_hatay_intervention
+		icon = GFX_SYR_hatay_intervention-412
+		x = 0
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SYR_incite_turkish_revolution  }
+	}
+
+	#Reorganize Cabinet
+	focus = {
+		id = SYR_reorganize_cabinet
+		icon = GFX_focus_generic_self_management
+		x = 4
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_oust_hashemites  }
+	}
+
+	#Against All Imperialism
+	focus = {
+		id = SYR_against_all_imperialism
+		icon = GFX_SYR_against_all_imperialism-645478
+		x = 0
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SYR_formalize_alliance  }
+	}
+
+	#Ally The Ottomans
+	focus = {
+		id = SYR_ally_the_ottomans
+		icon = GFX_focus_generic_befriend_turkey
+		x = 2
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_formalize_alliance  }
+		mutually_exclusive = { focus = SYR_against_all_imperialism  }
+	}
+
+	#Combat Illiteracy
+	focus = {
+		id = SYR_combat_illiteracy
+		icon = GFX_goal_unknown
+		x = 20
+		y = 1
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_increase_university_funding  }
+	}
+
+	#Arabs and Kurds
+	focus = {
+		id = SYR_arabs_and_kurds
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4
+		y = 1
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_a_great_syria  }
+	}
+
+	#Reaffirm Friendship
+	focus = {
+		id = SYR_reaffirm_friendship
+		icon = GFX_SYR_reaffirm_friendship-123
+		x = 1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_arabs_and_kurds  }
+	}
+
+	#Enforce New Ummah
+	focus = {
+		id = SYR_enforce_new_ummah
+		icon = GFX_focus_generic_attack_kurdistan
+		x = 7
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_arabs_and_kurds  }
+		mutually_exclusive = { focus = SYR_reaffirm_friendship  }
+	}
+
+	#Investigate Aleppo Bombing
+	focus = {
+		id = SYR_investigate_aleppo_bombing
+		icon = GFX_SYR_investigate_aleppo_bombing-645962
+		x = 4
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SYR_reaffirm_friendship  focus = SYR_enforce_new_ummah  }
+	}
+
+	#A Great Syria
+	focus = {
+		id = SYR_a_great_syria
+		icon = GFX_SYR_a_great_syria-808648
+		x = 4
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#A Strange Discovery
+	focus = {
+		id = SYR_a_strange_discovery
+		icon = GFX_SYR_a_strange_discovery-809018
+		x = 4
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_investigate_aleppo_bombing  }
+	}
+
+	#Welcome Back
+	focus = {
+		id = SYR_welcome_back
+		icon = GFX_SYR_welcome_back-808650
+		x = 4
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_a_strange_discovery  }
+	}
+
+	#Reach Out To Umayyads
+	focus = {
+		id = SYR_reach_out_to_umayyads
+		icon = GFX_SYR_reach_out_to_umayyads-645591
+		x = 2
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_invite_the_persians  }
+	}
+
+	#Assimilation
+	focus = {
+		id = SYR_assimilation
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 7
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SYR_home_before_the_leaves_bloom  }
+	}
+
+	#Destruction
+	focus = {
+		id = SYR_destruction
+		icon = GFX_SYR_destruction-280
+		x = 9
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SYR_home_before_the_leaves_bloom  }
+		mutually_exclusive = { focus = SYR_assimilation  }
+	}
+
+	#Formalize Alliance
+	focus = {
+		id = SYR_formalize_alliance
+		icon = GFX_goal_generic_alliance
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SYR_reaffirm_friendship  }
+	}
+
+	#Revive The Young Turks
+	focus = {
+		id = SYR_revive_the_young_turks
+		icon = GFX_SYR_revive_the_young_turks-646321
+		x = 0
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SYR_against_all_imperialism  }
+	}
+
+	#Invite the Persians
+	focus = {
+		id = SYR_invite_the_persians
+		icon = GFX_SYR_invite_the_persians-262009
+		x = 2
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_ally_the_ottomans  }
+	}
+
+	#Home Before The Leaves Bloom
+	focus = {
+		id = SYR_home_before_the_leaves_bloom
+		icon = GFX_goal_generic_attack_allies
+		x = 7
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SYR_enforce_new_ummah  }
+	}
+
+	#Oust Hashemites
+	focus = {
+		id = SYR_oust_hashemites
+		icon = GFX_SYR_oust_hashemites-646130
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_welcome_back  }
+	}
+
+	#Take To The Skies
+	focus = {
+		id = SYR_take_to_the_skies
+		icon = GFX_goal_generic_build_airforce
+		x = 15
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_analyze_past_conflicts  } prerequisite = { focus = SYR_predict_future_conflicts  }
+	}
+
+	#Crush Reactionary Thought
+	focus = {
+		id = SYR_crush_reactionary_thought
+		icon = GFX_SYR_crush_reactionary_thought-4
+		x = 20
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_mandate_schooling  }
+	}
+
+	#Outlaw Retardation
+	focus = {
+		id = SYR_outlaw_retardation
+		icon = GFX_SYR_outlaw_retardation-646101
+		x = 20
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_crush_reactionary_thought  }
+	}
+
+	#Unite The Muslim World
+	focus = {
+		id = SYR_unite_the_muslim_world
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		x = 2
+		y = 7
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_reach_out_to_umayyads  }
+	}
+
+	#One God, One Leader, One Nation
+	focus = {
+		id = SYR_onegodoneleaderonenation
+		icon = GFX_SYR_onegodoneleaderonenation-645907
+		x = 8
+		y = 9
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_slaughter_the_livestock  focus = SYR_employ_kurdish_ministers  }
+	}
+
+	#Destroy "Kurdistan"
+	focus = {
+		id = SYR_destroykurdistan
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 9
+		y = 5
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = SYR_destruction  }
+	}
+
+	#Pillage The Land
+	focus = {
+		id = SYR_pillage_the_land
+		icon = GFX_SYR_pillage_the_land-646033
+		x = 9
+		y = 6
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SYR_destroykurdistan  }
+	}
+
+	#Mass Deforestaion
+	focus = {
+		id = SYR_mass_deforestaion
+		icon = GFX_SYR_mass_deforestaion-645643
+		x = 9
+		y = 7
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SYR_pillage_the_land  }
+	}
+
+	#Slaughter The Livestock
+	focus = {
+		id = SYR_slaughter_the_livestock
+		icon = GFX_SYR_slaughter_the_livestock-645464
+		x = 9
+		y = 8
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = SYR_mass_deforestaion  }
+	}
+
+	#Kurds Are Arab
+	focus = {
+		id = SYR_kurds_are_arab
+		icon = GFX_goal_unknown
+		x = 7
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = SYR_assimilation  }
+	}
+
+	#Hearts And Minds
+	focus = {
+		id = SYR_hearts_and_minds
+		icon = GFX_SYR_hearts_and_minds-262090
+		x = 7
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_FRA_OCCUPATION_COST
+		}
+		prerequisite = { focus = SYR_kurds_are_arab  }
+	}
+
+	#Develop New Syria
+	focus = {
+		id = SYR_develop_new_syria
+		icon = GFX_SYR_develop_new_syria-645530
+		x = 7
+		y = 7
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SYR_hearts_and_minds  }
+	}
+
+	#Invest in Lafarge Syria
+	focus = {
+		id = SYR_invest_in_lafarge_syria
+		icon = GFX_SYR_invest_in_lafarge_syria-809313
+		x = 5
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SYR_welcome_back  }
+	}
+
+	#Liberate Persian Kurds
+	focus = {
+		id = SYR_liberate_persian_kurds
+		icon = GFX_SYR_liberate_persian_kurds-645602
+		x = 0
+		y = 8
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_hatay_intervention  }
+	}
+
+	#Create Motor Corps
+	focus = {
+		id = SYR_create_motor_corps
+		icon = GFX_goal_generic_army_motorized
+		x = 17
+		y = 3
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_analyze_past_conflicts  } prerequisite = { focus = SYR_predict_future_conflicts  }
+	}
+
+	#Enforce National Discipline
+	focus = {
+		id = SYR_enforce_national_discipline
+		icon = GFX_focus_RAJ_two_nation_theory
+		x = 11
+		y = 3
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SYR_modernization_of_the_armed_forces  }
+	}
+
+	#Republican Guard
+	focus = {
+		id = SYR_republican_guard
+		icon = GFX_goal_generic_special_forces
+		x = 12
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = SYR_take_to_the_skies  } prerequisite = { focus = SYR_create_motor_corps  } prerequisite = { focus = SYR_enforce_national_discipline  }
+	}
+
+	#Conscript The Retarded
+	focus = {
+		id = SYR_conscript_the_retarded
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 19
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SYR_outlaw_retardation  }
+	}
+
+	#Motorization Drive
+	focus = {
+		id = SYR_motorization_drive
+		icon = GFX_SYR_motorization_drive-645991
+		x = 16
+		y = 4
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = SYR_create_motor_corps  }
+	}
+
+	#Allow Bloc Quebecois As Opposition Party
+	focus = {
+		id = SYR_allow_bloc_quebecois_as_opposition_party
+		icon = GFX_goal_tfv_can_compromise_with_quebec
+		x = 6
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SYR_ban_political_parties  } prerequisite = { focus = SYR_integrate_opposition  } prerequisite = { focus = SYR_allies_in_the_north  }
+	}
+
+	#Ban Political Parties
+	focus = {
+		id = SYR_ban_political_parties
+		icon = GFX_goal_generic_political_pressure
+		x = 8
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_onegodoneleaderonenation  }
+	}
+
+	#Integrate Opposition
+	focus = {
+		id = SYR_integrate_opposition
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 6
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_onegodoneleaderonenation  }
+	}
+
+	#Allies In The North
+	focus = {
+		id = SYR_allies_in_the_north
+		icon = GFX_focus_spa_the_war_of_vengeance
+		x = 4
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_seize_uruguay_from_brazil  }
+	}
+
+	#Break Up Persian Entity
+	focus = {
+		id = SYR_break_up_persian_entity
+		icon = GFX_SYR_break_up_persian_entity-646118
+		x = 0
+		y = 9
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SYR_liberate_persian_kurds  }
+	}
+
+	#Towards Confederation
+	focus = {
+		id = SYR_towards_confederation
+		icon = GFX_focus_usa_honor_the_confederacy
+		x = 2
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_unite_the_muslim_world  }
+	}
+
+	#Proclaim United Arab Republic
+	focus = {
+		id = SYR_proclaim_united_arab_republic
+		icon = GFX_SYR_proclaim_united_arab_republic-645669
+		x = 2
+		y = 9
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SYR_towards_confederation  }
+	}
+
+	#Liberation Campaign
+	focus = {
+		id = SYR_liberation_campaign
+		icon = GFX_SYR_liberation_campaign-645471
+		x = 0
+		y = 11
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SYR_noanglosnorussiansnoimperialism  } prerequisite = { focus = SYR_break_up_persian_entity  }
+	}
+
+	#Rectification Campaign
+	focus = {
+		id = SYR_rectification_campaign
+		icon = GFX_SYR_rectification_campaign-646376
+		x = 2
+		y = 11
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SYR_noanglosnorussiansnoimperialism  } prerequisite = { focus = SYR_proclaim_united_arab_republic  }
+		mutually_exclusive = { focus = SYR_liberation_campaign  }
+	}
+
+	#Enslave The Retarded
+	focus = {
+		id = SYR_enslave_the_retarded
+		icon = GFX_SYR_enslave_the_retarded-59
+		x = 21
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SYR_outlaw_retardation  }
+		mutually_exclusive = { focus = SYR_conscript_the_retarded  }
+	}
+
+	#Mechanized Force
+	focus = {
+		id = SYR_mechanized_force
+		icon = GFX_focus_generic_tank_production
+		x = 17
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_motorization_drive  }
+	}
+
+	#Supremacy Of Infantry
+	focus = {
+		id = SYR_supremacy_of_infantry
+		icon = GFX_SYR_supremacy_of_infantry-645613
+		x = 15
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_motorization_drive  }
+		mutually_exclusive = { focus = SYR_mechanized_force  }
+	}
+
+	#Airborne Legion
+	focus = {
+		id = SYR_airborne_legion
+		icon = GFX_focus_eng_special_air_service
+		x = 12
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = SYR_republican_guard  }
+	}
+
+}

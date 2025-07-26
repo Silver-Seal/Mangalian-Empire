@@ -1,0 +1,329 @@
+focus_tree = {
+	id = mangal-empire-tree
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MNE
+		}
+	}
+	#Commit to Five Year Plan
+	focus = {
+		id = MNE_commit_to_five_year_plan
+		icon = GFX_MNE_commit_to_five_year_plan-645960
+		x = 20
+		y = 5
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_side_with_the_industrialists  }
+	}
+
+	#Break Up Officer Cliques
+	focus = {
+		id = MNE_break_up_officer_cliques
+		icon = GFX_MNE_break_up_officer_cliques-262074
+		x = 11
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = MNE_waschenburgsresignation  }
+	}
+
+	#Our Former Tiger
+	focus = {
+		id = MNE_our_former_tiger
+		icon = GFX_MNE_our_former_tiger-645829
+		x = 10
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_addressing_the_empire  }
+	}
+
+	#New Economic Plan
+	focus = {
+		id = MNE_new_economic_plan
+		icon = GFX_focus_hol_abandon_the_gold_standard
+		x = 18
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_new_dawn_reforms  }
+	}
+
+	#New Dawn Reforms
+	focus = {
+		id = MNE_new_dawn_reforms
+		icon = GFX_MNE_new_dawn_reforms-645939
+		x = 18
+		y = 2
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_addressing_the_empire  }
+	}
+
+	#Addressing The Empire
+	focus = {
+		id = MNE_addressing_the_empire
+		icon = GFX_MNE_addressing_the_empire-262060
+		x = 18
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = MNE_gathering_the_opposition  }
+		completion_reward = {
+			add_political_power = 75
+			
+			
+		}
+	}
+
+	#Gathering the Opposition
+	focus = {
+		id = MNE_gathering_the_opposition
+		icon = GFX_MNE_gathering_the_opposition-262055
+		x = 26
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		mutually_exclusive = { focus = MNE_addressing_the_empire  }
+	}
+
+	#Crush Vizija's Triumvirate
+	focus = {
+		id = MNE_crushvizijastriumvirate
+		icon = GFX_MNE_crushvizijastriumvirate-645738
+		x = 13
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_our_former_tiger  } prerequisite = { focus = MNE_new_dawn_reforms  }
+		completion_reward = {
+			army_experience = 50
+			
+			
+		}
+	}
+
+	#Addressing Vizija's Concerns
+	focus = {
+		id = MNE_addressingvizijasconcerns
+		icon = GFX_MNE_addressingvizijasconcerns-262118
+		x = 8
+		y = 3
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_our_former_tiger  }
+		mutually_exclusive = { focus = MNE_crushvizijastriumvirate  }
+	}
+
+	#Side with the Industrialists
+	focus = {
+		id = MNE_side_with_the_industrialists
+		icon = GFX_MNE_side_with_the_industrialists-645940
+		x = 20
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_new_economic_plan  }
+	}
+
+	#Remove Speczwil
+	focus = {
+		id = MNE_remove_speczwil
+		icon = GFX_MNE_remove_speczwil-645844
+		x = 13
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_crushvizijastriumvirate  }
+	}
+
+	#Side with the Agriculturalists
+	focus = {
+		id = MNE_side_with_the_agriculturalists
+		icon = GFX_MNE_side_with_the_agriculturalists-645857
+		x = 16
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_new_economic_plan  }
+		mutually_exclusive = { focus = MNE_side_with_the_industrialists  }
+	}
+
+	#Waschenburg's Resignation
+	focus = {
+		id = MNE_waschenburgsresignation
+		icon = GFX_MNE_waschenburgsresignation-645909
+		x = 13
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_remove_speczwil  }
+	}
+
+	#Military School Reform
+	focus = {
+		id = MNE_military_school_reform
+		icon = GFX_MNE_military_school_reform-645934
+		x = 8
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_addressingvizijasconcerns  }
+	}
+
+	#Ally Technocrats
+	focus = {
+		id = MNE_ally_technocrats
+		icon = GFX_MNE_ally_technocrats-645473
+		x = 18
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = MNE_side_with_the_industrialists  focus = MNE_side_with_the_agriculturalists  }
+	}
+
+	#Purge Disloyalty
+	focus = {
+		id = MNE_purge_disloyalty
+		icon = GFX_MNE_purge_disloyalty-645907
+		x = 15
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = MNE_waschenburgsresignation  }
+	}
+
+	#Scale Back Industrialization
+	focus = {
+		id = MNE_scale_back_industrialization
+		icon = GFX_MNE_scale_back_industrialization-645921
+		x = 16
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_side_with_the_agriculturalists  }
+	}
+
+	#Refurbish Imperial Railroads
+	focus = {
+		id = MNE_refurbish_imperial_railroads
+		icon = GFX_MNE_refurbish_imperial_railroads-645742
+		x = 23
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_side_with_the_industrialists  }
+	}
+
+	#Inject Cash into Vital Industries
+	focus = {
+		id = MNE_inject_cash_into_vital_industries
+		icon = GFX_focus_generic_aluminum
+		x = 20
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_commit_to_five_year_plan  }
+	}
+
+	#Reinforce Old Guard
+	focus = {
+		id = MNE_reinforce_old_guard
+		icon = GFX_focus_spr_unify_the_london_bureau
+		x = 10
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MNE_break_up_officer_cliques  }
+	}
+
+	#A Motorized Future?
+	focus = {
+		id = MNE_amotorizedfuture
+		icon = GFX_MNE_amotorizedfuture-646322
+		x = 26
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_side_with_the_industrialists  }
+		mutually_exclusive = { focus = MNE_refurbish_imperial_railroads  }
+	}
+
+	#Construct Imperial Motorways
+	focus = {
+		id = MNE_construct_imperial_motorways
+		icon = GFX_MNE_construct_imperial_motorways-262129
+		x = 26
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_amotorizedfuture  }
+	}
+
+	#Increase Naval Hub Connections
+	focus = {
+		id = MNE_increase_naval_hub_connections
+		icon = GFX_MNE_increase_naval_hub_connections-645974
+		x = 22
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_refurbish_imperial_railroads  }
+	}
+
+	#Standardize Railway Gauges
+	focus = {
+		id = MNE_standardize_railway_gauges
+		icon = GFX_MNE_standardize_railway_gauges-645972
+		x = 24
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = MNE_refurbish_imperial_railroads  }
+	}
+
+}

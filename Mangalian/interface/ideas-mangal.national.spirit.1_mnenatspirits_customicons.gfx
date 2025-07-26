@@ -1,0 +1,39 @@
+spriteTypes = { 
+	##Icon For: Vultures and Jackals
+	SpriteType = { 
+		name = "GFX_idea_mangal.national.spirit.1_vultures_and_jackals-644880"
+		texturefile = "gfx/interface/ideas/mnenatspirits-ideas/mangal.national.spirit.1_vultures_and_jackals-644880.dds"
+	}
+
+	##Icon For: Continental Hegemon
+	SpriteType = { 
+		name = "GFX_idea_mangal.national.spirit.1_continental_hegemon-1055"
+		texturefile = "gfx/interface/ideas/mnenatspirits-ideas/mangal.national.spirit.1_continental_hegemon-1055.dds"
+	}
+
+	##Icon For: Emperor Miklos II
+	SpriteType = { 
+		name = "GFX_idea_mangal.national.spirit.1_emperor_miklos_ii-1111"
+		texturefile = "gfx/interface/ideas/mnenatspirits-ideas/mangal.national.spirit.1_emperor_miklos_ii-1111.dds"
+	}
+
+	##Icon For: Four Cliques
+	SpriteType = { 
+		name = "GFX_idea_mangal.national.spirit.1_four_cliques-1956"
+		texturefile = "gfx/interface/ideas/mnenatspirits-ideas/mangal.national.spirit.1_four_cliques-1956.dds"
+	}
+
+	##Icon For: Bordeaux Reparations
+	SpriteType = { 
+		name = "GFX_idea_mangal.national.spirit.1_bordeaux_reparations-1464"
+		texturefile = "gfx/interface/ideas/mnenatspirits-ideas/mangal.national.spirit.1_bordeaux_reparations-1464.dds"
+	}
+
+	##Icon For: Economic Bubbling
+	SpriteType = { 
+		name = "GFX_idea_mangal.national.spirit.1_economic_bubbling-1230"
+		texturefile = "gfx/interface/ideas/mnenatspirits-ideas/mangal.national.spirit.1_economic_bubbling-1230.dds"
+	}
+
+ 
+ }

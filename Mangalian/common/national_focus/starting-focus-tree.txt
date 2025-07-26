@@ -1,0 +1,384 @@
+focus_tree = {
+	id = starting-focus-tree
+	continuous_focus_position = { x = 1670 y = 10 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	#Siberian Strikes
+	focus = {
+		id = SOV_siberian_strikes
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 5
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_confiscate_land_from_the_kulaks  } prerequisite = { focus = SOV_force_peasants_into_factories  }
+	}
+
+	#Appoint Anton Denikin
+	focus = {
+		id = SOV_appoint_anton_denikin
+		icon = GFX_SOV_appoint_anton_denikin-645994
+		x = 5
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SOV_convene_the_7th_state_duma  }
+		completion_reward = {
+			add_stability = 0.1
+			
+			
+		}
+	}
+
+	#Crackdown on the Ultranationalists
+	focus = {
+		id = SOV_crackdown_on_the_ultranationalists
+		icon = GFX_focus_focus_fra_fascist_threat
+		x = 7
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_protests_break_out  }
+	}
+
+	#Crackdown on the Republicans
+	focus = {
+		id = SOV_crackdown_on_the_republicans
+		icon = GFX_SOV_crackdown_on_the_republicans-645461
+		x = 5
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_protests_break_out  }
+	}
+
+	#Crackdown on the Socialists
+	focus = {
+		id = SOV_crackdown_on_the_socialists
+		icon = GFX_focus_prc_agrarian_socialism
+		x = 3
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = SOV_protests_break_out  }
+	}
+
+	#Institute Martial Law
+	focus = {
+		id = SOV_institute_martial_law
+		icon = GFX_SOV_institute_martial_law-262024
+		x = 5
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SOV_siberian_strikes  }
+	}
+
+	#Industrialization of Russia
+	focus = {
+		id = SOV_industrialization_of_russia
+		icon = GFX_focus_generic_industry_3
+		x = 3
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_stolypinsgreatmistake  }
+	}
+
+	#The Imperial Heir
+	focus = {
+		id = SOV_the_imperial_heir
+		icon = GFX_focus_generic_monarchy_2
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_appoint_anton_denikin  }
+	}
+
+	#The Rise of Trotsky
+	focus = {
+		id = SOV_the_rise_of_trotsky
+		icon = GFX_focus_fra_loyalty_trotzky
+		x = 2
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_toolittletoolate  }
+		mutually_exclusive = { focus = SOV_the_monarchosocialist_alternative  } mutually_exclusive = { focus = SOV_the_republican_surge  } mutually_exclusive = { focus = SOV_the_ultranationalist_response  }
+	}
+
+	#The Monarcho-Socialist Alternative
+	focus = {
+		id = SOV_the_monarchosocialist_alternative
+		icon = GFX_SOV_the_monarchosocialist_alternative-262089
+		x = 4
+		y = 13
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_toolittletoolate  }
+		mutually_exclusive = { focus = SOV_the_rise_of_trotsky  } mutually_exclusive = { focus = SOV_the_republican_surge  } mutually_exclusive = { focus = SOV_the_ultranationalist_response  }
+	}
+
+	#The Republican Surge
+	focus = {
+		id = SOV_the_republican_surge
+		icon = GFX_SOV_the_republican_surge-645471
+		x = 6
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_toolittletoolate  }
+		mutually_exclusive = { focus = SOV_the_rise_of_trotsky  } mutually_exclusive = { focus = SOV_the_monarchosocialist_alternative  } mutually_exclusive = { focus = SOV_the_ultranationalist_response  }
+	}
+
+	#The Ultranationalist Response
+	focus = {
+		id = SOV_the_ultranationalist_response
+		icon = GFX_SOV_the_ultranationalist_response-645923
+		x = 8
+		y = 13
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_toolittletoolate  }
+		mutually_exclusive = { focus = SOV_the_rise_of_trotsky  } mutually_exclusive = { focus = SOV_the_monarchosocialist_alternative  } mutually_exclusive = { focus = SOV_the_republican_surge  }
+	}
+
+	#Convene the 7th State Duma
+	focus = {
+		id = SOV_convene_the_7th_state_duma
+		icon = GFX_SOV_convene_the_7th_state_duma-645939
+		x = 5
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Select Kirill
+	focus = {
+		id = SOV_select_kirill
+		icon = GFX_SOV_select_kirill-262131
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_the_imperial_heir  }
+		mutually_exclusive = { focus = SOV_select_michael  }
+	}
+
+	#Select Michael
+	focus = {
+		id = SOV_select_michael
+		icon = GFX_SOV_select_michael-646288
+		x = 7
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_the_imperial_heir  }
+		mutually_exclusive = { focus = SOV_select_kirill  }
+	}
+
+	#Finish the Stolypin Reforms
+	focus = {
+		id = SOV_finish_the_stolypin_reforms
+		icon = GFX_SOV_finish_the_stolypin_reforms-645921
+		x = 1
+		y = 0
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Begin Shipping Siberian Grain Back
+	focus = {
+		id = SOV_begin_shipping_siberian_grain_back
+		icon = GFX_SOV_begin_shipping_siberian_grain_back-645857
+		x = 1
+		y = 1
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_finish_the_stolypin_reforms  }
+	}
+
+	#End the Resetlement
+	focus = {
+		id = SOV_end_the_resetlement
+		icon = GFX_SOV_end_the_resetlement-645991
+		x = 1
+		y = 2
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_begin_shipping_siberian_grain_back  }
+	}
+
+	#Reflect
+	focus = {
+		id = SOV_reflect
+		icon = GFX_SOV_reflect-262133
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SOV_end_the_resetlement  }
+	}
+
+	#Rollback Stolypin's Reforms
+	focus = {
+		id = SOV_rollbackstolypinsreforms
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_industrialization_of_russia  }
+	}
+
+	#Stolypin's Great Mistake
+	focus = {
+		id = SOV_stolypinsgreatmistake
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SOV_appoint_anton_denikin  }
+	}
+
+	#Solidify Legitimacy
+	focus = {
+		id = SOV_solidify_legitimacy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 6
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_select_kirill  } prerequisite = { focus = SOV_select_michael  }
+	}
+
+	#Confiscate Land from the Kulaks
+	focus = {
+		id = SOV_confiscate_land_from_the_kulaks
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 4
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_solidify_legitimacy  } prerequisite = { focus = SOV_rollbackstolypinsreforms  }
+	}
+
+	#Force Peasants into Factories
+	focus = {
+		id = SOV_force_peasants_into_factories
+		icon = GFX_SOV_force_peasants_into_factories-262107
+		x = 7
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { } prerequisite = { focus = SOV_rollbackstolypinsreforms  }
+	}
+
+	#Protests Break Out
+	focus = {
+		id = SOV_protests_break_out
+		icon = GFX_goal_generic_demand_territory
+		x = 5
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_institute_martial_law  }
+	}
+
+	#Defections in the Army
+	focus = {
+		id = SOV_defections_in_the_army
+		icon = GFX_focus_prc_infiltration
+		x = 5
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_crackdown_on_the_ultranationalists  } prerequisite = { focus = SOV_crackdown_on_the_republicans  } prerequisite = { focus = SOV_crackdown_on_the_socialists  }
+	}
+
+	#Dismiss Denikin and Take Control
+	focus = {
+		id = SOV_dismiss_denikin_and_take_control
+		icon = GFX_focus_generic_home_defense
+		x = 5
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_defections_in_the_army  }
+	}
+
+	#Too Little Too Late...
+	focus = {
+		id = SOV_toolittletoolate
+		icon = GFX_SOV_toolittletoolate-645755
+		x = 5
+		y = 12
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SOV_dismiss_denikin_and_take_control  }
+	}
+
+}

@@ -1,0 +1,143 @@
+focus_tree = {
+	id = mex
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = MEX
+		}
+	}
+	#Viva el Regente!
+	focus = {
+		id = MEX_vivaelregente
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 6
+		y = 0
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Election
+	focus = {
+		id = MEX_election
+		icon = GFX_focus_generic_treaty
+		x = 10
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#We need no Emperor
+	focus = {
+		id = MEX_we_need_no_emperor
+		icon = GFX_MEX_we_need_no_emperor-646130
+		x = 10
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MEX_vivaelregente  }
+		mutually_exclusive = { }
+	}
+
+	#Agustín de Iturbide y Green
+	focus = {
+		id = MEX_agustindeiturbideygreen
+		icon = GFX_MEX_agustindeiturbideygreen-645629
+		x = 6
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MEX_vivaelregente  }
+		mutually_exclusive = { } mutually_exclusive = { focus = MEX_we_need_no_emperor  }
+	}
+
+	#Maximilian of Habsburg
+	focus = {
+		id = MEX_maximilian_of_habsburg
+		icon = GFX_MEX_maximilian_of_habsburg-262061
+		x = 4
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MEX_vivaelregente  }
+		mutually_exclusive = { } mutually_exclusive = { focus = MEX_we_need_no_emperor  } mutually_exclusive = { focus = MEX_agustindeiturbideygreen  } mutually_exclusive = { } mutually_exclusive = { focus = MEX_maximilian_of_habsburg  }
+	}
+
+	#Viva Agustín!
+	focus = {
+		id = MEX_vivaagustin
+		icon = GFX_MEX_vivaagustin-645624
+		x = 6
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Viva Maximilian de Habsburg!
+	focus = {
+		id = MEX_vivamaximiliandehabsburg
+		icon = GFX_focus_hun_elect_a_king
+		x = 4
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Gold Shirts
+	focus = {
+		id = MEX_gold_shirts
+		icon = GFX_MEX_gold_shirts-646029
+		x = 8
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MEX_election  }
+	}
+
+	#Red shirts
+	focus = {
+		id = MEX_red_shirts
+		icon = GFX_MEX_red_shirts-262089
+		x = 12
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MEX_election  }
+	}
+
+	#Presidente Calles!
+	focus = {
+		id = MEX_presidentecalles
+		icon = GFX_focus_mex_exile_calles
+		x = 10
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = MEX_election  }
+	}
+
+	#New Age of Monarchism
+	focus = {
+		id = MEX_new_age_of_monarchism
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 16
+		y = 0
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+}

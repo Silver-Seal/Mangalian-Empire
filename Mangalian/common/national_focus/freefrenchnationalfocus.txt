@@ -1,0 +1,448 @@
+focus_tree = {
+	id = freefrenchnationalfocus
+	continuous_focus_position = { x = -40 y = 1180 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FRA
+		}
+	}
+	#Cornered, not Cowered
+	focus = {
+		id = FRA_cornerednotcowered
+		icon = GFX_FRA_cornerednotcowered-646231
+		x = 24
+		y = 8
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_the_empires_chokehold  } prerequisite = { focus = FRA_hit_and_run  } prerequisite = { focus = FRA_protect_our_coast  }
+	}
+
+	#Protect Our Coast
+	focus = {
+		id = FRA_protect_our_coast
+		icon = GFX_FRA_protect_our_coast-404
+		x = 26
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_the_triumphant_beast_looms  }
+	}
+
+	#Hit and Run
+	focus = {
+		id = FRA_hit_and_run
+		icon = GFX_goal_generic_navy_submarine
+		x = 24
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_the_triumphant_beast_looms  }
+	}
+
+	#The Empires Chokehold
+	focus = {
+		id = FRA_the_empires_chokehold
+		icon = GFX_goal_generic_navy_cruiser
+		x = 22
+		y = 6
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_the_triumphant_beast_looms  }
+	}
+
+	#Funding for the Military
+	focus = {
+		id = FRA_funding_for_the_military
+		icon = GFX_focus_mex_privatisation
+		x = 23
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_staggerednotbroken  } prerequisite = { focus = FRA_cornerednotcowered  }
+	}
+
+	#Ajaccio Military Academy
+	focus = {
+		id = FRA_ajaccio_military_academy
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 20
+		y = 9
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = FRA_staggerednotbroken  } prerequisite = { focus = FRA_cornerednotcowered  }
+	}
+
+	#131 Years on the Rock
+	focus = {
+		id = FRA_131_years_on_the_rock
+		icon = GFX_focus_generic_coastal_fort
+		x = 9
+		y = 1
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_armisticenotsurrender  }
+		completion_reward = {
+			add_war_support = 5.0
+			
+			
+		}
+	}
+
+	#Address the Mainland
+	focus = {
+		id = FRA_address_the_mainland
+		icon = GFX_FRA_address_the_mainland-118
+		x = 9
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_rally_the_island  } prerequisite = { focus = FRA_mobilize_algiers  }
+	}
+
+	#Rally the Island
+	focus = {
+		id = FRA_rally_the_island
+		icon = GFX_focus_generic_combined_arms
+		x = 8
+		y = 2
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_131_years_on_the_rock  }
+	}
+
+	#A Fight Far From Over
+	focus = {
+		id = FRA_a_fight_far_from_over
+		icon = GFX_FRA_a_fight_far_from_over-88
+		x = 9
+		y = 4
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_address_the_mainland  }
+	}
+
+	#Armistice, Not Surrender
+	focus = {
+		id = FRA_armisticenotsurrender
+		icon = GFX_FRA_armisticenotsurrender-270
+		x = 9
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Mobilize Algiers
+	focus = {
+		id = FRA_mobilize_algiers
+		icon = GFX_focus_secret_rearmament
+		x = 10
+		y = 2
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = FRA_131_years_on_the_rock  }
+	}
+
+	#Extend Emergency Powers
+	focus = {
+		id = FRA_extend_emergency_powers
+		icon = GFX_FRA_extend_emergency_powers-262024
+		x = 12
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_empower_de_gaulle  focus = FRA_empower_napoleon  }
+	}
+
+	#Alert at Algiers
+	focus = {
+		id = FRA_alert_at_algiers
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 2
+		y = 5
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_a_fight_far_from_over  }
+	}
+
+	#Leadership Crisis
+	focus = {
+		id = FRA_leadership_crisis
+		icon = GFX_FRA_leadership_crisis-646082
+		x = 9
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_a_fight_far_from_over  }
+	}
+
+	#A Spiraling Disaster
+	focus = {
+		id = FRA_a_spiraling_disaster
+		icon = GFX_FRA_a_spiraling_disaster-646327
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_leadership_crisis  }
+	}
+
+	#The Triumphant Beast Looms
+	focus = {
+		id = FRA_the_triumphant_beast_looms
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 17
+		y = 5
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_a_fight_far_from_over  }
+	}
+
+	#Jackboot Over France
+	focus = {
+		id = FRA_jackboot_over_france
+		icon = GFX_FRA_jackboot_over_france-645743
+		x = 18
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = FRA_the_triumphant_beast_looms  }
+	}
+
+	#A Red Banner Over Corsica
+	focus = {
+		id = FRA_a_red_banner_over_corsica
+		icon = GFX_FRA_a_red_banner_over_corsica-645530
+		x = 6
+		y = 7
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_a_spiraling_disaster  }
+		mutually_exclusive = { focus = FRA_emergency_junta  }
+	}
+
+	#Emergency Junta
+	focus = {
+		id = FRA_emergency_junta
+		icon = GFX_goal_demand_sudetenland
+		x = 12
+		y = 7
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_a_spiraling_disaster  }
+	}
+
+	#Empower De Gaulle
+	focus = {
+		id = FRA_empower_de_gaulle
+		icon = GFX_FRA_empower_de_gaulle-645632
+		x = 11
+		y = 8
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_emergency_junta  }
+		mutually_exclusive = { focus = FRA_empower_napoleon  }
+	}
+
+	#Empower Napoleon
+	focus = {
+		id = FRA_empower_napoleon
+		icon = GFX_FRA_empower_napoleon-645679
+		x = 13
+		y = 8
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_emergency_junta  }
+	}
+
+	#Establish A Provisional Government
+	focus = {
+		id = FRA_establish_a_provisional_government
+		icon = GFX_FRA_establish_a_provisional_government-645595
+		x = 10
+		y = 9
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_empower_de_gaulle  }
+	}
+
+	#Divine Ordainment
+	focus = {
+		id = FRA_divine_ordainment
+		icon = GFX_focus_generic_monarchy_1
+		x = 14
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_empower_napoleon  }
+	}
+
+	#Constitutional Monarchy
+	focus = {
+		id = FRA_constitutional_monarchy
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = 17
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_empower_napoleon  }
+		mutually_exclusive = { focus = FRA_divine_ordainment  }
+	}
+
+	#Firm Hand
+	focus = {
+		id = FRA_firm_hand
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 11
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_establish_a_provisional_government  } prerequisite = { focus = FRA_extend_emergency_powers  }
+	}
+
+	#Guiding Hand
+	focus = {
+		id = FRA_guiding_hand
+		icon = GFX_FRA_guiding_hand-645471
+		x = 8
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_establish_a_provisional_government  }
+		mutually_exclusive = { focus = FRA_firm_hand  }
+	}
+
+	#An Army In Tatters
+	focus = {
+		id = FRA_an_army_in_tatters
+		icon = GFX_FRA_an_army_in_tatters-59
+		x = 20
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_the_triumphant_beast_looms  }
+	}
+
+	#Staggered, not Broken
+	focus = {
+		id = FRA_staggerednotbroken
+		icon = GFX_FRA_staggerednotbroken-262099
+		x = 20
+		y = 8
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = FRA_an_army_in_tatters  } prerequisite = { focus = FRA_jackboot_over_france  }
+	}
+
+	#Establish the Armee De Lair
+	focus = {
+		id = FRA_establish_the_armee_de_lair
+		icon = GFX_goal_generic_air_doctrine
+		x = 26
+		y = 10
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = FRA_staggerednotbroken  } prerequisite = { focus = FRA_cornerednotcowered  } prerequisite = { focus = FRA_funding_for_the_military  }
+	}
+
+	#Establish the Milice Francaise
+	focus = {
+		id = FRA_establish_the_milice_francaise
+		icon = GFX_focus_fra_milice
+		x = 20
+		y = 10
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_funding_for_the_military  } prerequisite = { focus = FRA_ajaccio_military_academy  }
+	}
+
+	#Kickstart Aerial Industry
+	focus = {
+		id = FRA_kickstart_aerial_industry
+		icon = GFX_FRA_kickstart_aerial_industry-645859
+		x = 26
+		y = 11
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = FRA_establish_the_armee_de_lair  }
+	}
+
+	#Crackdown on Socialists
+	focus = {
+		id = FRA_crackdown_on_socialists
+		icon = GFX_FRA_crackdown_on_socialists-645539
+		x = 19
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_FRA_POLITICAL_VIOLENCE
+		}
+		prerequisite = { focus = FRA_establish_the_milice_francaise  } prerequisite = { focus = FRA_constitutional_monarchy  focus = FRA_divine_ordainment  } prerequisite = { focus = FRA_establish_the_milice_francaise  }
+	}
+
+}

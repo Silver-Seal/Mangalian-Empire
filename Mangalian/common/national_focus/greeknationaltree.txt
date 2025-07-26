@@ -1,0 +1,457 @@
+focus_tree = {
+	id = greeknationaltree
+	continuous_focus_position = { x = 150 y = 2350 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	#Big Trouble in Little Greece
+	focus = {
+		id = GRE_big_trouble_in_little_greece
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability
+		x = 5
+		y = 0
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#All For The Cause
+	focus = {
+		id = GRE_all_for_the_cause
+		icon = GFX_focus_generic_concessions
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_big_trouble_in_little_greece  }
+	}
+
+	#Unity Is Strength
+	focus = {
+		id = GRE_unity_is_strength
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 7
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_big_trouble_in_little_greece  }
+	}
+
+	#Immediate Emergency Mobilization
+	focus = {
+		id = GRE_immediate_emergency_mobilization
+		icon = GFX_focus_generic_manpower
+		x = 5
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GRE_big_trouble_in_little_greece  }
+	}
+
+	#The Hellenic Spirit
+	focus = {
+		id = GRE_the_hellenic_spirit
+		icon = GFX_focus_GRE_resurrecting_the_megali_idea
+		x = 5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_all_for_the_cause  } prerequisite = { focus = GRE_unity_is_strength  } prerequisite = { focus = GRE_immediate_emergency_mobilization  }
+	}
+
+	#Death To Tyrants!
+	focus = {
+		id = GRE_deathtotyrants
+		icon = GFX_focus_GRE_following_in_the_footsteps_of_giants
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_the_hellenic_spirit  }
+	}
+
+	#Encourage Martyrdom
+	focus = {
+		id = GRE_encourage_martyrdom
+		icon = GFX_GRE_encourage_martyrdom-646025
+		x = 5
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_deathtotyrants  }
+	}
+
+	#Remember Thermopylae
+	focus = {
+		id = GRE_remember_thermopylae
+		icon = GFX_focus_GRE_reviving_the_spartan_warrior_spirit
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_encourage_martyrdom  }
+	}
+
+	#Birthplace of Democracy
+	focus = {
+		id = GRE_birthplace_of_democracy
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 3
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_the_hellenic_spirit  }
+	}
+
+	#Deport Serbians
+	focus = {
+		id = GRE_deport_serbians
+		icon = GFX_GRE_deport_serbians-262107
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GRE_birthplace_of_democracy  }
+	}
+
+	#Assemble Provisional Cabinent
+	focus = {
+		id = GRE_assemble_provisional_cabinent
+		icon = GFX_GRE_assemble_provisional_cabinent-262055
+		x = 8
+		y = 3
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_the_hellenic_spirit  }
+	}
+
+	#Conscript the Youth
+	focus = {
+		id = GRE_conscript_the_youth
+		icon = GFX_focus_secret_rearmament
+		x = 4
+		y = 6
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_remember_thermopylae  } prerequisite = { focus = GRE_seize_serbian_assets  }
+	}
+
+	#Seize Serbian Assets
+	focus = {
+		id = GRE_seize_serbian_assets
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 3
+		y = 5
+		cost = 6
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GRE_deport_serbians  }
+	}
+
+	#Cement The Provisional Government
+	focus = {
+		id = GRE_cement_the_provisional_government
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 8
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_nationalize_businesses  focus = GRE_work_with_business_owners  }
+	}
+
+	#Agrarian Reform
+	focus = {
+		id = GRE_agrarian_reform
+		icon = GFX_GRE_agrarian_reform-645857
+		x = 9
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = GRE_assemble_provisional_cabinent  }
+	}
+
+	#Nationalize Businesses
+	focus = {
+		id = GRE_nationalize_businesses
+		icon = GFX_GRE_nationalize_businesses-262036
+		x = 7
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GRE_agrarian_reform  } prerequisite = { focus = GRE_land_tax  }
+	}
+
+	#Work With Business Owners
+	focus = {
+		id = GRE_work_with_business_owners
+		icon = GFX_GRE_work_with_business_owners-645469
+		x = 9
+		y = 5
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GRE_agrarian_reform  } prerequisite = { focus = GRE_land_tax  }
+		mutually_exclusive = { focus = GRE_nationalize_businesses  }
+	}
+
+	#Land Tax
+	focus = {
+		id = GRE_land_tax
+		icon = GFX_GRE_land_tax-645949
+		x = 7
+		y = 4
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GRE_assemble_provisional_cabinent  }
+	}
+
+	#Callout to the World
+	focus = {
+		id = GRE_callout_to_the_world
+		icon = GFX_GRE_callout_to_the_world-646368
+		x = 6
+		y = 7
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GRE_conscript_the_youth  } prerequisite = { focus = GRE_cement_the_provisional_government  }
+	}
+
+	#Destitute but not Forsaken
+	focus = {
+		id = GRE_destitute_but_not_forsaken
+		icon = GFX_focus_generic_manpower
+		x = 3
+		y = 8
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GRE_callout_to_the_world  }
+	}
+
+	#Phoenix Ascendant
+	focus = {
+		id = GRE_phoenix_ascendant
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = 10
+		y = 8
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GRE_callout_to_the_world  }
+		mutually_exclusive = { focus = GRE_destitute_but_not_forsaken  }
+	}
+
+	#Cave to the Giant
+	focus = {
+		id = GRE_cave_to_the_giant
+		icon = GFX_GRE_cave_to_the_giant-59
+		x = 1
+		y = 9
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_destitute_but_not_forsaken  }
+	}
+
+	#David vs Goliath
+	focus = {
+		id = GRE_david_vs_goliath
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 5
+		y = 9
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GRE_destitute_but_not_forsaken  }
+		mutually_exclusive = { focus = GRE_cave_to_the_giant  }
+	}
+
+	#Desperate Gambit
+	focus = {
+		id = GRE_desperate_gambit
+		icon = GFX_GRE_desperate_gambit-646376
+		x = 4
+		y = 10
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = GRE_david_vs_goliath  }
+	}
+
+	#Until The Last Drop of Blood
+	focus = {
+		id = GRE_until_the_last_drop_of_blood
+		icon = GFX_GRE_until_the_last_drop_of_blood-646325
+		x = 6
+		y = 10
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GRE_david_vs_goliath  }
+		mutually_exclusive = { focus = GRE_desperate_gambit  }
+	}
+
+	#Repel The Invaders
+	focus = {
+		id = GRE_repel_the_invaders
+		icon = GFX_GRE_repel_the_invaders-646275
+		x = 4
+		y = 11
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = GRE_desperate_gambit  }
+	}
+
+	#Fortress Athens
+	focus = {
+		id = GRE_fortress_athens
+		icon = GFX_goal_generic_fortify_city
+		x = 6
+		y = 11
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = GRE_until_the_last_drop_of_blood  }
+	}
+
+	#Women and Girls Battalions
+	focus = {
+		id = GRE_women_and_girls_battalions
+		icon = GFX_GRE_women_and_girls_battalions-262028
+		x = 6
+		y = 12
+		cost = 3
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = GRE_fortress_athens  }
+	}
+
+	#Freedom or Death!
+	focus = {
+		id = GRE_freedomordeath
+		icon = GFX_GRE_freedomordeath-646321
+		x = 6
+		y = 14
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = GRE_women_and_girls_battalions  }
+	}
+
+	#Into Greater Macedonia
+	focus = {
+		id = GRE_into_greater_macedonia
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		x = 4
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_repel_the_invaders  }
+	}
+
+	#Sofia Trembles
+	focus = {
+		id = GRE_sofia_trembles
+		icon = GFX_focus_BUL_destroy_the_zveno
+		x = 4
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_into_greater_macedonia  }
+	}
+
+	#Αἴκα!
+	focus = {
+		id = GRE_aika
+		icon = GFX_GRE_aika-826427
+		x = 5
+		y = 15
+		cost = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_sofia_trembles  focus = GRE_freedomordeath  }
+	}
+
+	#Desperate Negotiations
+	focus = {
+		id = GRE_desperate_negotiations
+		icon = GFX_goal_generic_alliance
+		x = 0
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_cave_to_the_giant  }
+	}
+
+	#Bluff Our Hand
+	focus = {
+		id = GRE_bluff_our_hand
+		icon = GFX_GRE_bluff_our_hand-646295
+		x = 2
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = GRE_cave_to_the_giant  }
+		mutually_exclusive = { focus = GRE_desperate_negotiations  }
+	}
+
+}

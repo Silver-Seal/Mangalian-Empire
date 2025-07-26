@@ -1,0 +1,7 @@
+spriteTypes = { 
+	##Icon For: The Old World Crumbles
+	SpriteType = { 
+		name = "the_old_world_crumbles-774414"
+		texturefile = "gfx/interface/bookmarks/the_old_world_crumbles-bookmark/the_old_world_crumbles-774414.dds"
+	}
+

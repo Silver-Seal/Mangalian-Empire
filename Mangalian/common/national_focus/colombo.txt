@@ -1,0 +1,549 @@
+focus_tree = {
+	id = colombo
+	continuous_focus_position = { x = -40 y = 1570 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COL
+		}
+	}
+	#Aftermath of the 1929 Coup d'etat
+	focus = {
+		id = COL_aftermathofthe1929coupdetat
+		icon = GFX_focus_usa_voter_registration_act
+		x = 11
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Secure the Pinilla Regime
+	focus = {
+		id = COL_secure_the_pinilla_regime
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 8
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_aftermathofthe1929coupdetat  }
+	}
+
+	#Trade Union Counter-Revolution
+	focus = {
+		id = COL_trade_union_counterrevolution
+		icon = GFX_focus_ger_great_red_menace
+		x = 12
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_aftermathofthe1929coupdetat  }
+		mutually_exclusive = { focus = COL_secure_the_pinilla_regime  }
+	}
+
+	#Liberal Plot
+	focus = {
+		id = COL_liberal_plot
+		icon = GFX_focus_spa_save_the_alcazar
+		x = 19
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_aftermathofthe1929coupdetat  }
+		mutually_exclusive = { focus = COL_secure_the_pinilla_regime  } mutually_exclusive = { focus = COL_trade_union_counterrevolution  }
+	}
+
+	#Work with Rebel Forces
+	focus = {
+		id = COL_work_with_rebel_forces
+		icon = GFX_COL_work_with_rebel_forces-645755
+		x = 18
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_liberal_plot  }
+		mutually_exclusive = { focus = COL_maintain_integrity  }
+	}
+
+	#Maintain Integrity
+	focus = {
+		id = COL_maintain_integrity
+		icon = GFX_COL_maintain_integrity-645772
+		x = 20
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_liberal_plot  }
+		mutually_exclusive = { focus = COL_work_with_rebel_forces  }
+	}
+
+	#Overthrow the Tyrant
+	focus = {
+		id = COL_overthrow_the_tyrant
+		icon = GFX_COL_overthrow_the_tyrant-4
+		x = 19
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_work_with_rebel_forces  focus = COL_maintain_integrity  }
+	}
+
+	#Industry
+	focus = {
+		id = COL_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 25
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Army
+	focus = {
+		id = COL_army
+		icon = GFX_COL_army-646142
+		x = 29
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#Navy
+	focus = {
+		id = COL_navy
+		icon = GFX_COL_navy-646121
+		x = 32
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#Airforce
+	focus = {
+		id = COL_airforce
+		icon = GFX_COL_airforce-645908
+		x = 35
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#Negotiate with Leftist Guerillas
+	focus = {
+		id = COL_negotiate_with_leftist_guerillas
+		icon = GFX_COL_negotiate_with_leftist_guerillas-262127
+		x = 11
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_trade_union_counterrevolution  }
+	}
+
+	#Reorganized Colombian Senate
+	focus = {
+		id = COL_reorganized_colombian_senate
+		icon = GFX_COL_reorganized_colombian_senate-341
+		x = 14
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_trade_union_counterrevolution  }
+	}
+
+	#National Security Act
+	focus = {
+		id = COL_national_security_act
+		icon = GFX_COL_national_security_act-646029
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_secure_the_pinilla_regime  }
+		mutually_exclusive = { focus = COL_aromeofthetropics  }
+	}
+
+	#Stamp out Socialist Elements
+	focus = {
+		id = COL_stamp_out_socialist_elements
+		icon = GFX_focus_ger_assassinate_mussolini
+		x = 3
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_bring_unions_under_control  }
+	}
+
+	#Begin a Constitutional Rewrite
+	focus = {
+		id = COL_begin_a_constitutional_rewrite
+		icon = GFX_focus_hol_the_foundations_of_defense
+		x = 17
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_overthrow_the_tyrant  }
+	}
+
+	#Enforce Presidential Supremacy
+	focus = {
+		id = COL_enforce_presidential_supremacy
+		icon = GFX_focus_up_joan_of_arc
+		x = 6
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_disband_the_senate  }
+	}
+
+	#Disband the Senate
+	focus = {
+		id = COL_disband_the_senate
+		icon = GFX_COL_disband_the_senate-262024
+		x = 5
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_national_security_act  }
+	}
+
+	#Greater than Bolívar!
+	focus = {
+		id = COL_greaterthanbolivar
+		icon = GFX_COL_greaterthanbolivar-829093
+		x = 6
+		y = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Equal Conscription among the Genders
+	focus = {
+		id = COL_equal_conscription_among_the_genders
+		icon = GFX_COL_equal_conscription_among_the_genders-645530
+		x = 12
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_right_to_work  }
+	}
+
+	#Right to Work
+	focus = {
+		id = COL_right_to_work
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 12
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#A Rome of the Tropics?
+	focus = {
+		id = COL_aromeofthetropics
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 9
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_secure_the_pinilla_regime  }
+	}
+
+	#Supporting Likeminded Allies
+	focus = {
+		id = COL_supporting_likeminded_allies
+		icon = GFX_COL_supporting_likeminded_allies-262024
+		x = 5
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Nationalize Foreign Assets
+	focus = {
+		id = COL_nationalize_foreign_assets
+		icon = GFX_focus_spa_the_spanish_miracle
+		x = 12
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Caesar of Venice
+	focus = {
+		id = COL_caesar_of_venice
+		icon = GFX_COL_caesar_of_venice-645492
+		x = 9
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_aromeofthetropics  }
+	}
+
+	#Standardize the Denarius
+	focus = {
+		id = COL_standardize_the_denarius
+		icon = GFX_COL_standardize_the_denarius-645670
+		x = 10
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#March on Gallia
+	focus = {
+		id = COL_march_on_gallia
+		icon = GFX_COL_march_on_gallia-646368
+		x = 10
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Vanquish the Persian Menace!
+	focus = {
+		id = COL_vanquishthepersianmenace
+		icon = GFX_COL_vanquishthepersianmenace-646319
+		x = 11
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Into the Brittannic Isles
+	focus = {
+		id = COL_into_the_brittannic_isles
+		icon = GFX_COL_into_the_brittannic_isles-404
+		x = 9
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Novo Ordine prosternere!
+	focus = {
+		id = COL_novoordineprosternere
+		icon = GFX_COL_novoordineprosternere-645453
+		x = 10
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Reintroduce the Praetorian Gaurd
+	focus = {
+		id = COL_reintroduce_the_praetorian_gaurd
+		icon = GFX_focus_generic_little_entente
+		x = 8
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Foster Military Aura
+	focus = {
+		id = COL_foster_military_aura
+		icon = GFX_focus_eng_expose_the_belly_of_the_bear
+		x = 10
+		y = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Julius Caesar, Manifested
+	focus = {
+		id = COL_juliuscaesarmanifested
+		icon = GFX_COL_juliuscaesarmanifested-88
+		x = 11
+		y = 13
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Bring Unions under Control
+	focus = {
+		id = COL_bring_unions_under_control
+		icon = GFX_focus_chi_flying_tigers
+		x = 4
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_disband_the_senate  }
+	}
+
+	#Negotiate Venezuelan Support
+	focus = {
+		id = COL_negotiate_venezuelan_support
+		icon = GFX_focus_hol_united_netherlands
+		x = 2
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_stamp_out_socialist_elements  }
+	}
+
+	#Amnesty for Ecuadorian Rebels
+	focus = {
+		id = COL_amnesty_for_ecuadorian_rebels
+		icon = GFX_focus_generic_support_the_left_right
+		x = 1
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_negotiate_venezuelan_support  }
+	}
+
+	#Rejuvinate Rural Areas
+	focus = {
+		id = COL_rejuvinate_rural_areas
+		icon = GFX_COL_rejuvinate_rural_areas-645921
+		x = 3
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_negotiate_venezuelan_support  }
+	}
+
+	#No Mercy, No Quarter!
+	focus = {
+		id = COL_nomercynoquarter
+		icon = GFX_goal_demand_sudetenland
+		x = 5
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_secure_the_heart_of_gran_colombia  }
+	}
+
+	#Introduce State Controlled Unions
+	focus = {
+		id = COL_introduce_state_controlled_unions
+		icon = GFX_COL_introduce_state_controlled_unions-59
+		x = 3
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_rejuvinate_rural_areas  }
+	}
+
+	#Secure the Heart of Gran Colombia
+	focus = {
+		id = COL_secure_the_heart_of_gran_colombia
+		icon = GFX_focus_focus_fra_maquis
+		x = 5
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_stamp_out_socialist_elements  }
+		mutually_exclusive = { focus = COL_negotiate_venezuelan_support  }
+	}
+
+	#Increase Military Presence in the Andes
+	focus = {
+		id = COL_increase_military_presence_in_the_andes
+		icon = GFX_focus_GRE_a_land_of_mountains
+		x = 7
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = COL_secure_the_heart_of_gran_colombia  }
+	}
+
+	#Into the Atlantic
+	focus = {
+		id = COL_into_the_atlantic
+		icon = GFX_COL_into_the_atlantic-404
+		x = 11
+		y = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Rethink Greek Fire
+	focus = {
+		id = COL_rethink_greek_fire
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = 11
+		y = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Veni, Vidi, Vici
+	focus = {
+		id = COL_venividivici
+		icon = GFX_focus_jap_strike_south
+		x = 11
+		y = 11
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The Eternal City Reclaimed
+	focus = {
+		id = COL_the_eternal_city_reclaimed
+		icon = GFX_focus_generic_concessions
+		x = 11
+		y = 12
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+}

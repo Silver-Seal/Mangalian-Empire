@@ -1,0 +1,784 @@
+focus_tree = {
+	id = commonwealth-starting-tree
+	continuous_focus_position = { x = 1480 y = 10 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+	#The Future of a Nation
+	focus = {
+		id = POL_the_future_of_a_nation
+		icon = GFX_POL_the_future_of_a_nation-262065
+		x = 5
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		available = {
+			has_country_leader = {
+			    name = "Władysław Grabski"    ruling_only = no}
+			
+		}
+	}
+
+	#Preparing for the Election
+	focus = {
+		id = POL_preparing_for_the_election
+		icon = GFX_focus_generic_polish_deal
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_legacy_of_the_reformer  }
+	}
+
+	#Continue Grabski's Dream
+	focus = {
+		id = POL_continuegrabskisdream
+		icon = GFX_focus_spr_torchbearers_of_tomorrow
+		x = 0
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_increase_the_security_of_the_election  } prerequisite = { focus = POL_the_people_will_decide_the_future  }
+		mutually_exclusive = { focus = POL_cultural_supremacy  } mutually_exclusive = { focus = POL_the_people_will_take_control  } mutually_exclusive = { focus = POL_undograbskisprogress  }
+	}
+
+	#Cultural Supremacy
+	focus = {
+		id = POL_cultural_supremacy
+		icon = GFX_POL_cultural_supremacy-645604
+		x = 3
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_increase_the_security_of_the_election  } prerequisite = { focus = POL_the_people_will_decide_the_future  }
+		mutually_exclusive = { focus = POL_continuegrabskisdream  } mutually_exclusive = { focus = POL_the_people_will_take_control  } mutually_exclusive = { focus = POL_undograbskisprogress  }
+	}
+
+	#The People Will Take Control
+	focus = {
+		id = POL_the_people_will_take_control
+		icon = GFX_POL_the_people_will_take_control-646097
+		x = 6
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_increase_the_security_of_the_election  } prerequisite = { focus = POL_the_people_will_decide_the_future  }
+		mutually_exclusive = { focus = POL_continuegrabskisdream  } mutually_exclusive = { focus = POL_cultural_supremacy  } mutually_exclusive = { focus = POL_undograbskisprogress  }
+	}
+
+	#Undo Grabski's Progress
+	focus = {
+		id = POL_undograbskisprogress
+		icon = GFX_POL_undograbskisprogress-646208
+		x = 9
+		y = 4
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_increase_the_security_of_the_election  } prerequisite = { focus = POL_the_people_will_decide_the_future  }
+		mutually_exclusive = { focus = POL_continuegrabskisdream  } mutually_exclusive = { focus = POL_cultural_supremacy  } mutually_exclusive = { focus = POL_the_people_will_take_control  }
+	}
+
+	#Rally Support Behind Władysław Sikorski
+	focus = {
+		id = POL_rallysupportbehindwladyslawsikorski
+		icon = GFX_POL_rallysupportbehindwladyslawsikorski-646000
+		x = 0
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_continuegrabskisdream  }
+	}
+
+	#Empower Piłsudski
+	focus = {
+		id = POL_empowerpilsudski
+		icon = GFX_POL_empowerpilsudski-262056
+		x = 4
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_strengthen_national_identity  }
+		mutually_exclusive = { focus = POL_empower_the_iron_wolf  }
+	}
+
+	#Empower the Iron Wolf
+	focus = {
+		id = POL_empower_the_iron_wolf
+		icon = GFX_POL_empower_the_iron_wolf-262051
+		x = 2
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_strengthen_national_identity  }
+		mutually_exclusive = { focus = POL_empowerpilsudski  }
+	}
+
+	#Secure Dominant Leadership
+	focus = {
+		id = POL_secure_dominant_leadership
+		icon = GFX_POL_secure_dominant_leadership-645829
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_cultural_supremacy  }
+	}
+
+	#Strengthen National Identity
+	focus = {
+		id = POL_strengthen_national_identity
+		icon = GFX_goal_generic_national_unity
+		x = 3
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_secure_dominant_leadership  }
+	}
+
+	#Revive the Crown
+	focus = {
+		id = POL_revive_the_crown
+		icon = GFX_focus_generic_monarchy_1
+		x = 9
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_undograbskisprogress  }
+	}
+
+	#Empower Mindaugas II
+	focus = {
+		id = POL_empower_mindaugas_ii
+		icon = GFX_focus_rom_royal_dictatorship
+		x = 9
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_revive_the_crown  }
+	}
+
+	#Absolute Monarchy
+	focus = {
+		id = POL_absolute_monarchy
+		icon = GFX_goal_continuous_suppression
+		x = 8
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_empower_mindaugas_ii  }
+		mutually_exclusive = { focus = POL_royal_constitutional_reform  }
+	}
+
+	#Royal Constitutional Reform
+	focus = {
+		id = POL_royal_constitutional_reform
+		icon = GFX_POL_royal_constitutional_reform-262055
+		x = 10
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_empower_mindaugas_ii  }
+		mutually_exclusive = { focus = POL_absolute_monarchy  }
+	}
+
+	#State-Controlled Economy and Country
+	focus = {
+		id = POL_statecontrolled_economy_and_country
+		icon = GFX_POL_statecontrolled_economy_and_country-646118
+		x = 6
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_collectivist_reform  }
+	}
+
+	#Push to Elect Antanas Sniečkus
+	focus = {
+		id = POL_pushtoelectantanassnieckus
+		icon = GFX_POL_pushtoelectantanassnieckus-645837
+		x = 6
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_workersunite  }
+	}
+
+	#Workers Unite!
+	focus = {
+		id = POL_workersunite
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		x = 6
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_people_will_take_control  }
+	}
+
+	#Collectivist Reform
+	focus = {
+		id = POL_collectivist_reform
+		icon = GFX_POL_collectivist_reform-645921
+		x = 6
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_pushtoelectantanassnieckus  }
+	}
+
+	#Cultural Unity
+	focus = {
+		id = POL_cultural_unity
+		icon = GFX_POL_cultural_unity-646299
+		x = 0
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_rallysupportbehindwladyslawsikorski  }
+	}
+
+	#Transition to Full Democracy
+	focus = {
+		id = POL_transition_to_full_democracy
+		icon = GFX_focus_generic_polish_deal
+		x = 0
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_cultural_unity  }
+	}
+
+	#What Path will the Nation take?
+	focus = {
+		id = POL_whatpathwillthenationtake
+		icon = GFX_POL_whatpathwillthenationtake-646223
+		x = 6
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_legacy_of_the_reformer  }
+	}
+
+	#Increase the Security of the Election
+	focus = {
+		id = POL_increase_the_security_of_the_election
+		icon = GFX_POL_increase_the_security_of_the_election-646365
+		x = 4
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_preparing_for_the_election  } prerequisite = { focus = POL_whatpathwillthenationtake  }
+	}
+
+	#The Legacy of the Reformer
+	focus = {
+		id = POL_the_legacy_of_the_reformer
+		icon = GFX_focus_TUR_reform_the_balkan_pact
+		x = 5
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_future_of_a_nation  }
+	}
+
+	#The People will Decide the Future
+	focus = {
+		id = POL_the_people_will_decide_the_future
+		icon = GFX_POL_the_people_will_decide_the_future-262054
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_preparing_for_the_election  } prerequisite = { focus = POL_whatpathwillthenationtake  }
+	}
+
+	#The Deciding Day
+	focus = {
+		id = POL_the_deciding_day
+		icon = GFX_POL_the_deciding_day-646037
+		x = 5
+		y = 9
+		cost = .5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_holdontograbskisideals  focus = POL_a_ruling_culture  focus = POL_statecontrolled_economy_and_country  focus = POL_rally_behind_the_monarch  }
+	}
+
+	#Rally Behind the Monarch
+	focus = {
+		id = POL_rally_behind_the_monarch
+		icon = GFX_POL_rally_behind_the_monarch-646122
+		x = 9
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_royal_constitutional_reform  focus = POL_absolute_monarchy  }
+	}
+
+	#A Ruling Culture
+	focus = {
+		id = POL_a_ruling_culture
+		icon = GFX_POL_a_ruling_culture-646073
+		x = 3
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_empower_the_iron_wolf  focus = POL_empowerpilsudski  }
+	}
+
+	#Hold Onto Grabski's Ideals
+	focus = {
+		id = POL_holdontograbskisideals
+		icon = GFX_POL_holdontograbskisideals-646079
+		x = 0
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_transition_to_full_democracy  }
+	}
+
+	#The Price of Bread
+	focus = {
+		id = POL_the_price_of_bread
+		icon = GFX_POL_the_price_of_bread-645857
+		x = 4
+		y = 10
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_revitalize_the_commonwealth_economy  }
+	}
+
+	#Revitalize the Commonwealth Economy
+	focus = {
+		id = POL_revitalize_the_commonwealth_economy
+		icon = GFX_focus_mex_privatisation
+		x = 3
+		y = 9
+		cost = 4
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#Post-Grabski Recovery
+	focus = {
+		id = POL_postgrabski_recovery
+		icon = GFX_POL_postgrabski_recovery-645454
+		x = 5
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_the_deciding_day  } prerequisite = { focus = POL_the_price_of_bread  }
+	}
+
+	#Industrial Development Path
+	focus = {
+		id = POL_industrial_development_path
+		icon = GFX_POL_industrial_development_path-646318
+		x = 2
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_postgrabski_recovery  }
+	}
+
+	#Agricultural Modernization Path
+	focus = {
+		id = POL_agricultural_modernization_path
+		icon = GFX_POL_agricultural_modernization_path-646046
+		x = 4
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_postgrabski_recovery  }
+	}
+
+	#Grain for the Commonwealth
+	focus = {
+		id = POL_grain_for_the_commonwealth
+		icon = GFX_POL_grain_for_the_commonwealth-262088
+		x = 4
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_agricultural_modernization_path  } prerequisite = { focus = POL_industrial_development_path  }
+	}
+
+	#Support Rural Farmers
+	focus = {
+		id = POL_support_rural_farmers
+		icon = GFX_POL_support_rural_farmers-645991
+		x = 4
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_grain_for_the_commonwealth  } prerequisite = { focus = POL_strategic_infrastructure_development  }
+	}
+
+	#Trade and Investments
+	focus = {
+		id = POL_trade_and_investments
+		icon = GFX_POL_trade_and_investments-645977
+		x = 6
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_postgrabski_recovery  }
+	}
+
+	#Education and Innovation
+	focus = {
+		id = POL_education_and_innovation
+		icon = GFX_POL_education_and_innovation-645734
+		x = 8
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_postgrabski_recovery  }
+	}
+
+	#Land Redistribution Program
+	focus = {
+		id = POL_land_redistribution_program
+		icon = GFX_POL_land_redistribution_program-645949
+		x = 4
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_support_rural_farmers  }
+	}
+
+	#Strategic Infrastructure Development
+	focus = {
+		id = POL_strategic_infrastructure_development
+		icon = GFX_POL_strategic_infrastructure_development-645972
+		x = 2
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_agricultural_modernization_path  } prerequisite = { focus = POL_industrial_development_path  }
+	}
+
+	#Expand Domestic Industry
+	focus = {
+		id = POL_expand_domestic_industry
+		icon = GFX_POL_expand_domestic_industry-646147
+		x = 2
+		y = 14
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_strategic_infrastructure_development  }
+	}
+
+	#Reinforce Military Industry
+	focus = {
+		id = POL_reinforce_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_expand_domestic_industry  }
+	}
+
+	#Invite Foreign Investors
+	focus = {
+		id = POL_invite_foreign_investors
+		icon = GFX_POL_invite_foreign_investors-646312
+		x = 6
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_trade_and_investments  }
+	}
+
+	#Baltic Trade Expansion
+	focus = {
+		id = POL_baltic_trade_expansion
+		icon = GFX_POL_baltic_trade_expansion-645689
+		x = 6
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_invite_foreign_investors  }
+	}
+
+	#Form the Baltic Trade League
+	focus = {
+		id = POL_form_the_baltic_trade_league
+		icon = GFX_POL_form_the_baltic_trade_league-645813
+		x = 6
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_baltic_trade_expansion  }
+	}
+
+	#Rebuild Universities
+	focus = {
+		id = POL_rebuild_universities
+		icon = GFX_POL_rebuild_universities-646146
+		x = 8
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_education_and_innovation  }
+	}
+
+	#National Research Bureaus
+	focus = {
+		id = POL_national_research_bureaus
+		icon = GFX_POL_national_research_bureaus-646157
+		x = 8
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_rebuild_universities  }
+	}
+
+	#Institute Crop Rotation
+	focus = {
+		id = POL_institute_crop_rotation
+		icon = GFX_POL_institute_crop_rotation-645464
+		x = 8
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = POL_national_research_bureaus  }
+	}
+
+	#temp
+	focus = {
+		id = POL_temp
+		icon = GFX_POL_temp-645661
+		x = 2
+		y = 1
+		cost = 20
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+	}
+
+	#An Iron Legion for the Iron Wolf
+	focus = {
+		id = POL_an_iron_legion_for_the_iron_wolf
+		icon = GFX_POL_an_iron_legion_for_the_iron_wolf-262043
+		x = 13
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_a_nation_renewed  }
+	}
+
+	#A Nation Renewed
+	focus = {
+		id = POL_a_nation_renewed
+		icon = GFX_POL_a_nation_renewed-820100
+		x = 5
+		y = 16
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_reinforce_military_industry  } prerequisite = { focus = POL_land_redistribution_program  } prerequisite = { focus = POL_form_the_baltic_trade_league  } prerequisite = { focus = POL_institute_crop_rotation  }
+	}
+
+	#Develop Lithuanian Central Lowland Farming
+	focus = {
+		id = POL_develop_lithuanian_central_lowland_farming
+		icon = GFX_POL_develop_lithuanian_central_lowland_farming-820101
+		x = 12
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_an_iron_legion_for_the_iron_wolf  }
+	}
+
+	#Vilnius will be the Capital!
+	focus = {
+		id = POL_vilniuswillbethecapital
+		icon = GFX_POL_vilniuswillbethecapital-820102
+		x = 14
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_an_iron_legion_for_the_iron_wolf  }
+	}
+
+	#temp
+	focus = {
+		id = POL_temp
+		icon = GFX_POL_temp-820104
+		x = 1
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#temp
+	focus = {
+		id = POL_temp
+		icon = GFX_POL_temp-820105
+		x = 0
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Lithuania is our Homeland
+	focus = {
+		id = POL_lithuania_is_our_homeland
+		icon = GFX_POL_lithuania_is_our_homeland-820212
+		x = 13
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_develop_lithuanian_central_lowland_farming  } prerequisite = { focus = POL_vilniuswillbethecapital  }
+	}
+
+	#Topple the Commonwealth
+	focus = {
+		id = POL_topple_the_commonwealth
+		icon = GFX_POL_topple_the_commonwealth-262046
+		x = 13
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#We can Peacefully Resolve the Question of Union
+	focus = {
+		id = POL_we_can_peacefully_resolve_the_question_of_union
+		icon = GFX_goal_unknown
+		x = 12
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_lithuania_is_our_homeland  }
+		mutually_exclusive = { focus = POL_blood_will_be_spilled  }
+	}
+
+	#Blood will be Spilled
+	focus = {
+		id = POL_blood_will_be_spilled
+		icon = GFX_goal_unknown
+		x = 14
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_lithuania_is_our_homeland  }
+		mutually_exclusive = { focus = POL_we_can_peacefully_resolve_the_question_of_union  }
+	}
+
+}

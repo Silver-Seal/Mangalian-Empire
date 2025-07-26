@@ -1,0 +1,100 @@
+focus_tree = {
+	id = alaska
+	continuous_focus_position = { x = -40 y = 1180 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ALA
+		}
+	}
+	#Alone in the North
+	focus = {
+		id = ALA_alone_in_the_north
+		icon = GFX_ALA_alone_in_the_north-645629
+		x = 8
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The path of the new King
+	focus = {
+		id = ALA_the_path_of_the_new_king
+		icon = GFX_focus_hun_elect_a_king
+		x = 6
+		y = 2
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALA_decisions_of_our_future  }
+	}
+
+	#Decisions of our Future
+	focus = {
+		id = ALA_decisions_of_our_future
+		icon = GFX_goal_unknown
+		x = 0
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Decisions of our Future
+	focus = {
+		id = ALA_decisions_of_our_future
+		icon = GFX_goal_unknown
+		x = 8
+		y = 1
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALA_alone_in_the_north  }
+	}
+
+	#A king in his own Right
+	focus = {
+		id = ALA_a_king_in_his_own_right
+		icon = GFX_goal_unknown
+		x = 6
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALA_the_path_of_the_new_king  }
+	}
+
+	#A king under the rule of God
+	focus = {
+		id = ALA_a_king_under_the_rule_of_god
+		icon = GFX_ALA_a_king_under_the_rule_of_god-645968
+		x = 9
+		y = 3
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ALA_the_path_of_the_new_king  }
+		mutually_exclusive = { focus = ALA_a_king_in_his_own_right  }
+	}
+
+	#The kings increasing madness
+	focus = {
+		id = ALA_the_kings_increasing_madness
+		icon = GFX_goal_unknown
+		x = 14
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+}

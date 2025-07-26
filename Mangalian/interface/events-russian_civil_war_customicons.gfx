@@ -1,0 +1,9 @@
+spriteTypes = { 
+	##Icon For: The Russian Civil War Begins
+	SpriteType = { 
+		name = "the_russian_civil_war_begins-509"
+		texturefile = "gfx/interface/events/russian_civil_war-event/the_russian_civil_war_begins-509.dds"
+	}
+
+ 
+ }

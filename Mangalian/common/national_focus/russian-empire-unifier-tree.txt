@@ -1,0 +1,962 @@
+focus_tree = {
+	id = russian-empire-unifier-tree
+	continuous_focus_position = { x = -40 y = 1570 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
+	}
+	#A New Aristocracy
+	focus = {
+		id = RUS_a_new_aristocracy
+		icon = GFX_RUS_a_new_aristocracy-646366
+		x = 7
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_create_state_monopolies  } prerequisite = { focus = RUS_a_new_serfdom  } prerequisite = { focus = RUS_import_economic_experts_from_harbin  }
+	}
+
+	#Rodzaevsky Ascendant
+	focus = {
+		id = RUS_rodzaevsky_ascendant
+		icon = GFX_RUS_rodzaevsky_ascendant-428
+		x = 14
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Solidify the Amur Basin
+	focus = {
+		id = RUS_solidify_the_amur_basin
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 3
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_our_national_russian_dream  }
+	}
+
+	#Our Japanese Benefactors
+	focus = {
+		id = RUS_our_japanese_benefactors
+		icon = GFX_focus_jap_pacific_guardian
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_allies_far_and_wide  }
+		mutually_exclusive = { focus = RUS_likeminded_russians  }
+	}
+
+	#Request Vladivostok
+	focus = {
+		id = RUS_request_vladivostok
+		icon = GFX_RUS_request_vladivostok-646206
+		x = 3
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_acquire_japanese_guns  }
+	}
+
+	#Our National Russian Dream
+	focus = {
+		id = RUS_our_national_russian_dream
+		icon = GFX_focus_BUL_prussia_of_the_balkans
+		x = 3
+		y = 0
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+	}
+
+	#Allies Far and Wide
+	focus = {
+		id = RUS_allies_far_and_wide
+		icon = GFX_goal_generic_major_alliance
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_solidify_the_amur_basin  }
+	}
+
+	#Like-Minded Russians
+	focus = {
+		id = RUS_likeminded_russians
+		icon = GFX_RUS_likeminded_russians-646275
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_allies_far_and_wide  }
+	}
+
+	#Recruit Semyonov
+	focus = {
+		id = RUS_recruit_semyonov
+		icon = GFX_RUS_recruit_semyonov-262084
+		x = 5
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_likeminded_russians  }
+	}
+
+	#Acquire Japanese Guns
+	focus = {
+		id = RUS_acquire_japanese_guns
+		icon = GFX_RUS_acquire_japanese_guns-645755
+		x = 3
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RUS_our_japanese_benefactors  }
+	}
+
+	#Semyonov's Cossack Host
+	focus = {
+		id = RUS_semyonovscossackhost
+		icon = GFX_RUS_semyonovscossackhost-262057
+		x = 5
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RUS_recruit_semyonov  }
+	}
+
+	#Our National Salvation
+	focus = {
+		id = RUS_our_national_salvation
+		icon = GFX_RUS_our_national_salvation-262112
+		x = 3
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_together_for_a_greater_russia  } prerequisite = { focus = RUS_an_army_of_farmers_and_poors  }
+	}
+
+	#Together for a Greater Russia
+	focus = {
+		id = RUS_together_for_a_greater_russia
+		icon = GFX_RUS_together_for_a_greater_russia-646045
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_request_vladivostok  } prerequisite = { focus = RUS_semyonovscossackhost  }
+	}
+
+	#Stabilize the Party
+	focus = {
+		id = RUS_stabilize_the_party
+		icon = GFX_RUS_stabilize_the_party-645829
+		x = 1
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_solidify_the_amur_basin  }
+	}
+
+	#Pillage the Countryside
+	focus = {
+		id = RUS_pillage_the_countryside
+		icon = GFX_goal_generic_more_territorial_claims
+		x = 1
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_stabilize_the_party  }
+	}
+
+	#Kidnap Farmers
+	focus = {
+		id = RUS_kidnap_farmers
+		icon = GFX_RUS_kidnap_farmers-283
+		x = 1
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_pillage_the_countryside  }
+	}
+
+	#Conscript the Poor
+	focus = {
+		id = RUS_conscript_the_poor
+		icon = GFX_RUS_conscript_the_poor-646356
+		x = 1
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = RUS_kidnap_farmers  }
+	}
+
+	#An Army of Farmers and Poors
+	focus = {
+		id = RUS_an_army_of_farmers_and_poors
+		icon = GFX_RUS_an_army_of_farmers_and_poors-262099
+		x = 1
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RUS_conscript_the_poor  }
+	}
+
+	#Deal with the Enemies of the Russian People
+	focus = {
+		id = RUS_deal_with_the_enemies_of_the_russian_people
+		icon = GFX_focus_generic_army_tanks2
+		x = 14
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_our_holy_victory  }
+	}
+
+	#Our Holy Victory
+	focus = {
+		id = RUS_our_holy_victory
+		icon = GFX_RUS_our_holy_victory-646263
+		x = 14
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_rodzaevsky_ascendant  }
+	}
+
+	#No More Liberals
+	focus = {
+		id = RUS_no_more_liberals
+		icon = GFX_focus_generic_strike_at_democracy2
+		x = 15
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_deal_with_the_enemies_of_the_russian_people  }
+	}
+
+	#No More Communists
+	focus = {
+		id = RUS_no_more_communists
+		icon = GFX_focus_attack_soviet
+		x = 13
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_deal_with_the_enemies_of_the_russian_people  }
+	}
+
+	#The Future of the Church
+	focus = {
+		id = RUS_the_future_of_the_church
+		icon = GFX_focus_mex_triumph_over_the_cristeros
+		x = 14
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_no_more_liberals  } prerequisite = { focus = RUS_no_more_communists  }
+	}
+
+	#Stability Secured
+	focus = {
+		id = RUS_stability_secured
+		icon = GFX_goal_generic_political_pressure
+		x = 14
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_future_of_the_church  }
+	}
+
+	#Economic Stagnation
+	focus = {
+		id = RUS_economic_stagnation
+		icon = GFX_RUS_economic_stagnation-806488
+		x = 7
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_stability_secured  }
+	}
+
+	#Rural Collpase
+	focus = {
+		id = RUS_rural_collpase
+		icon = GFX_RUS_rural_collpase-646340
+		x = 6
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_economic_stagnation  }
+	}
+
+	#Industrial Devastation
+	focus = {
+		id = RUS_industrial_devastation
+		icon = GFX_RUS_industrial_devastation-646323
+		x = 8
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_economic_stagnation  }
+	}
+
+	#Invite Japanese Corporations
+	focus = {
+		id = RUS_invite_japanese_corporations
+		icon = GFX_focus_jap_zaibatsu
+		x = 10
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_falangist_economics  } prerequisite = { focus = RUS_placate_the_japanese  }
+	}
+
+	#Our Occupied Land
+	focus = {
+		id = RUS_our_occupied_land
+		icon = GFX_goal_continuous_suppression
+		x = 14
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_stability_secured  }
+	}
+
+	#Create State Monopolies
+	focus = {
+		id = RUS_create_state_monopolies
+		icon = GFX_RUS_create_state_monopolies-645940
+		x = 8
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_falangist_economics  }
+	}
+
+	#Falangist Economics
+	focus = {
+		id = RUS_falangist_economics
+		icon = GFX_focus_spa_the_phalanx_ascendant
+		x = 9
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_industrial_devastation  }
+	}
+
+	#Wheat Quotas
+	focus = {
+		id = RUS_wheat_quotas
+		icon = GFX_RUS_wheat_quotas-645921
+		x = 4
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_a_new_path  }
+	}
+
+	#A New Serfdom
+	focus = {
+		id = RUS_a_new_serfdom
+		icon = GFX_RUS_a_new_serfdom-806061
+		x = 5
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_wheat_quotas  } prerequisite = { focus = RUS_siberian_farm_camps  }
+	}
+
+	#Siberian Farm Camps
+	focus = {
+		id = RUS_siberian_farm_camps
+		icon = GFX_RUS_siberian_farm_camps-645959
+		x = 6
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_a_new_path  }
+	}
+
+	#The Far East
+	focus = {
+		id = RUS_the_far_east
+		icon = GFX_RUS_the_far_east-262114
+		x = 12
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_our_occupied_land  }
+	}
+
+	#A New Path
+	focus = {
+		id = RUS_a_new_path
+		icon = GFX_RUS_a_new_path-645857
+		x = 5
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_rural_collpase  }
+	}
+
+	#Import Economic Experts From Harbin
+	focus = {
+		id = RUS_import_economic_experts_from_harbin
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		x = 7
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_rural_collpase  } prerequisite = { focus = RUS_industrial_devastation  }
+	}
+
+	#The Final Push
+	focus = {
+		id = RUS_the_final_push
+		icon = GFX_RUS_the_final_push-806520
+		x = 10
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_offer_access_to_magadan  }
+	}
+
+	#Our Lost Port
+	focus = {
+		id = RUS_our_lost_port
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 11
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_far_east  }
+	}
+
+	#Placate the Japanese
+	focus = {
+		id = RUS_placate_the_japanese
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 11
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_our_lost_port  }
+	}
+
+	#Offer Access to Magadan
+	focus = {
+		id = RUS_offer_access_to_magadan
+		icon = GFX_RUS_offer_access_to_magadan-411
+		x = 10
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = RUS_placate_the_japanese  }
+	}
+
+	#The Manchurian Civil War
+	focus = {
+		id = RUS_the_manchurian_civil_war
+		icon = GFX_RUS_the_manchurian_civil_war-262120
+		x = 13
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_far_east  }
+	}
+
+	#Send Weapons and Volunteers to Harbin
+	focus = {
+		id = RUS_send_weapons_and_volunteers_to_harbin
+		icon = GFX_RUS_send_weapons_and_volunteers_to_harbin-646033
+		x = 13
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_pledge_support_to_harbin  }
+	}
+
+	#Pledge Support to Harbin
+	focus = {
+		id = RUS_pledge_support_to_harbin
+		icon = GFX_goal_generic_small_arms
+		x = 13
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_manchurian_civil_war  }
+	}
+
+	#Integrate Zheltorossiya
+	focus = {
+		id = RUS_integrate_zheltorossiya
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 13
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_send_weapons_and_volunteers_to_harbin  }
+	}
+
+	#Eastern Europe
+	focus = {
+		id = RUS_eastern_europe
+		icon = GFX_RUS_eastern_europe-262094
+		x = 16
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_our_occupied_land  }
+	}
+
+	#Alaska
+	focus = {
+		id = RUS_alaska
+		icon = GFX_RUS_alaska-262101
+		x = 12
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_the_final_frontier  }
+	}
+
+	#The Final Frontier
+	focus = {
+		id = RUS_the_final_frontier
+		icon = GFX_RUS_the_final_frontier-645844
+		x = 12
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_the_final_push  } prerequisite = { focus = RUS_integrate_zheltorossiya  }
+	}
+
+	#Whole At Last
+	focus = {
+		id = RUS_whole_at_last
+		icon = GFX_RUS_whole_at_last-645983
+		x = 14
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_alaska  } prerequisite = { focus = RUS_integrate_the_caucuses  } prerequisite = { focus = RUS_integrate_ukraine  } prerequisite = { focus = RUS_integrate_belarus  }
+	}
+
+	#The Future of the Nation
+	focus = {
+		id = RUS_the_future_of_the_nation
+		icon = GFX_focus_generic_self_management
+		x = 25
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_stability_secured  }
+	}
+
+	#Turn to Reason
+	focus = {
+		id = RUS_turn_to_reason
+		icon = GFX_focus_generic_diplomatic_treaty
+		x = 23
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_future_of_the_nation  }
+	}
+
+	#A New Path
+	focus = {
+		id = RUS_a_new_path
+		icon = GFX_RUS_a_new_path-270
+		x = 27
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_future_of_the_nation  }
+		mutually_exclusive = { focus = RUS_turn_to_reason  }
+	}
+
+	#Integrate the Military Breakaways
+	focus = {
+		id = RUS_integrate_the_military_breakaways
+		icon = GFX_goal_generic_military_deal
+		x = 16
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_eastern_europe  }
+	}
+
+	#Prepare to Strike the Empire
+	focus = {
+		id = RUS_prepare_to_strike_the_empire
+		icon = GFX_RUS_prepare_to_strike_the_empire-645854
+		x = 16
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = RUS_integrate_the_military_breakaways  }
+	}
+
+	#The Great War
+	focus = {
+		id = RUS_the_great_war
+		icon = GFX_RUS_the_great_war-645998
+		x = 16
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_prepare_to_strike_the_empire  }
+	}
+
+	#Integrate the Caucuses
+	focus = {
+		id = RUS_integrate_the_caucuses
+		icon = GFX_RUS_integrate_the_caucuses-645562
+		x = 15
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_the_great_war  }
+	}
+
+	#Prepare to Finish the Partitions
+	focus = {
+		id = RUS_prepare_to_finish_the_partitions
+		icon = GFX_RUS_prepare_to_finish_the_partitions-807726
+		x = 17
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_the_great_war  }
+	}
+
+	#Ally the Germans
+	focus = {
+		id = RUS_ally_the_germans
+		icon = GFX_focus_chi_mission_to_germany
+		x = 17
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_prepare_to_finish_the_partitions  }
+	}
+
+	#Integrate Ukraine
+	focus = {
+		id = RUS_integrate_ukraine
+		icon = GFX_RUS_integrate_ukraine-807728
+		x = 16
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_the_final_war  }
+	}
+
+	#The Final War
+	focus = {
+		id = RUS_the_final_war
+		icon = GFX_RUS_the_final_war-645990
+		x = 17
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_ally_the_germans  }
+	}
+
+	#Integrate Belarus
+	focus = {
+		id = RUS_integrate_belarus
+		icon = GFX_RUS_integrate_belarus-262051
+		x = 18
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_the_final_war  }
+	}
+
+	#Gather Allies
+	focus = {
+		id = RUS_gather_allies
+		icon = GFX_RUS_gather_allies-830119
+		x = 23
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_turn_to_reason  }
+	}
+
+	#The Great Purge
+	focus = {
+		id = RUS_the_great_purge
+		icon = GFX_RUS_the_great_purge-262098
+		x = 27
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_our_new_holy_eurasian_empire  }
+	}
+
+	#An Empire for the Entire World
+	focus = {
+		id = RUS_an_empire_for_the_entire_world
+		icon = GFX_RUS_an_empire_for_the_entire_world-340
+		x = 14
+		y = 16
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = RUS_whole_at_last  }
+	}
+
+	#Our New Holy Eurasian Empire
+	focus = {
+		id = RUS_our_new_holy_eurasian_empire
+		icon = GFX_RUS_our_new_holy_eurasian_empire-645933
+		x = 27
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_a_new_path  }
+	}
+
+	#A New Church
+	focus = {
+		id = RUS_a_new_church
+		icon = GFX_RUS_a_new_church-4
+		x = 28
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_great_purge  }
+	}
+
+	#Chosen By God
+	focus = {
+		id = RUS_chosen_by_god
+		icon = GFX_RUS_chosen_by_god-830117
+		x = 25
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_the_great_purge  focus = RUS_control_the_patriarch  }
+		mutually_exclusive = { focus = RUS_hand_in_hand_with_the_church  } mutually_exclusive = { focus = RUS_a_new_church  }
+	}
+
+	#Hand in Hand With The Church
+	focus = {
+		id = RUS_hand_in_hand_with_the_church
+		icon = GFX_goal_generic_major_alliance
+		x = 22
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_control_the_patriarch  }
+		mutually_exclusive = { focus = RUS_chosen_by_god  }
+	}
+
+	#Control The Patriarch
+	focus = {
+		id = RUS_control_the_patriarch
+		icon = GFX_RUS_control_the_patriarch-830118
+		x = 23
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = RUS_gather_allies  }
+	}
+
+	#Construct A Great Church
+	focus = {
+		id = RUS_construct_a_great_church
+		icon = GFX_goal_generic_construct_civilian
+		x = 22
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_hand_in_hand_with_the_church  }
+	}
+
+	#The Kindom Of Heaven
+	focus = {
+		id = RUS_the_kindom_of_heaven
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = 25
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_chosen_by_god  }
+	}
+
+	#A New People For A New Empire
+	focus = {
+		id = RUS_a_new_people_for_a_new_empire
+		icon = GFX_RUS_a_new_people_for_a_new_empire-262043
+		x = 28
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_a_new_church  }
+	}
+
+	#A New World
+	focus = {
+		id = RUS_a_new_world
+		icon = GFX_RUS_a_new_world-830120
+		x = 25
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = RUS_construct_a_great_church  focus = RUS_the_kindom_of_heaven  focus = RUS_a_new_people_for_a_new_empire  }
+	}
+
+}

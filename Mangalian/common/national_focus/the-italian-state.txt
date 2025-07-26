@@ -1,0 +1,372 @@
+focus_tree = {
+	id = the-italian-state
+	continuous_focus_position = { x = -40 y = 1050 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ITA
+		}
+	}
+	#Revive Catholic Zeal
+	focus = {
+		id = ITA_revive_catholic_zeal
+		icon = GFX_focus_spa_eliminate_the_carlists
+		x = 12
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ITA_seek_papal_support  }
+	}
+
+	#The Grand Speech
+	focus = {
+		id = ITA_the_grand_speech
+		icon = GFX_focus_generic_italy_first
+		x = 8
+		y = 0
+		cost = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Rebuild the Classis
+	focus = {
+		id = ITA_rebuild_the_classis
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 16
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+	}
+
+	#Expand Naval Production
+	focus = {
+		id = ITA_expand_naval_production
+		icon = GFX_ITA_expand_naval_production-646231
+		x = 16
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_WAR_SUPPORT
+		}
+		prerequisite = { focus = ITA_rebuild_the_classis  }
+	}
+
+	#Seek Papal Support
+	focus = {
+		id = ITA_seek_papal_support
+		icon = GFX_ITA_seek_papal_support-645904
+		x = 12
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+	}
+
+	#Eliminate the Greeks Brigands
+	focus = {
+		id = ITA_eliminate_the_greeks_brigands
+		icon = GFX_ITA_eliminate_the_greeks_brigands-646325
+		x = 3
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+		mutually_exclusive = { focus = ITA_compromise_with_the_salentino_greeks  }
+	}
+
+	#Compromise with the Salentino Greeks
+	focus = {
+		id = ITA_compromise_with_the_salentino_greeks
+		icon = GFX_focus_generic_befriend_greece
+		x = 1
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+		mutually_exclusive = { focus = ITA_eliminate_the_greeks_brigands  }
+	}
+
+	#Expand the Industries
+	focus = {
+		id = ITA_expand_the_industries
+		icon = GFX_focus_generic_industry_3
+		x = 5
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+	}
+
+	#Strengthen our Military Industry
+	focus = {
+		id = ITA_strengthen_our_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITA_expand_the_industries  }
+	}
+
+	#Build our Civilian Industry
+	focus = {
+		id = ITA_build_our_civilian_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 4
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = ITA_expand_the_industries  }
+	}
+
+	#Expand Research
+	focus = {
+		id = ITA_expand_research
+		icon = GFX_ITA_expand_research-645479
+		x = 5
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ITA_expand_the_industries  }
+	}
+
+	#Secured Funding for Military Research
+	focus = {
+		id = ITA_secured_funding_for_military_research
+		icon = GFX_ITA_secured_funding_for_military_research-646146
+		x = 6
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ITA_expand_research  }
+	}
+
+	#Secured Funding for Civilian Research
+	focus = {
+		id = ITA_secured_funding_for_civilian_research
+		icon = GFX_ITA_secured_funding_for_civilian_research-646163
+		x = 4
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_RESEARCH
+		}
+		prerequisite = { focus = ITA_expand_research  }
+		mutually_exclusive = { focus = ITA_secured_funding_for_military_research  }
+	}
+
+	#Demand what is Rightfully Ours
+	focus = {
+		id = ITA_demand_what_is_rightfully_ours
+		icon = GFX_ITA_demand_what_is_rightfully_ours-645947
+		x = 8
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+	}
+
+	#Take Back what is Ours
+	focus = {
+		id = ITA_take_back_what_is_ours
+		icon = GFX_ITA_take_back_what_is_ours-322
+		x = 8
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ITA_demand_what_is_rightfully_ours  }
+	}
+
+	#A New Roman Empire.
+	focus = {
+		id = ITA_a_new_roman_empire
+		icon = GFX_ITA_a_new_roman_empire-646051
+		x = 8
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = ITA_take_back_what_is_ours  }
+	}
+
+	#Strengthen the Legions
+	focus = {
+		id = ITA_strengthen_the_legions
+		icon = GFX_ITA_strengthen_the_legions-646071
+		x = 14
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+	}
+
+	#Church and State
+	focus = {
+		id = ITA_church_and_state
+		icon = GFX_ITA_church_and_state-645997
+		x = 12
+		y = 3
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_revive_catholic_zeal  }
+	}
+
+	#Catholic spies
+	focus = {
+		id = ITA_catholic_spies
+		icon = GFX_ITA_catholic_spies-645996
+		x = 10
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_church_and_state  }
+	}
+
+	#Reestablish Catholic Military Orders
+	focus = {
+		id = ITA_reestablish_catholic_military_orders
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		x = 12
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ITA_church_and_state  }
+	}
+
+	#Otto per Mille
+	focus = {
+		id = ITA_otto_per_mille
+		icon = GFX_focus_mex_privatisation
+		x = 14
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_church_and_state  }
+	}
+
+	#Send the Greeks to their Home
+	focus = {
+		id = ITA_send_the_greeks_to_their_home
+		icon = GFX_focus_GRE_bedrock_of_balkan_stability
+		x = 0
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_compromise_with_the_salentino_greeks  }
+	}
+
+	#Integrate the Greeks
+	focus = {
+		id = ITA_integrate_the_greeks
+		icon = GFX_ITA_integrate_the_greeks-645591
+		x = 2
+		y = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_compromise_with_the_salentino_greeks  }
+		mutually_exclusive = { focus = ITA_send_the_greeks_to_their_home  }
+	}
+
+	#End the Herertics
+	focus = {
+		id = ITA_end_the_herertics
+		icon = GFX_focus_generic_strike_at_democracy1
+		x = 12
+		y = 6
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_catholic_spies  } prerequisite = { focus = ITA_reestablish_catholic_military_orders  } prerequisite = { focus = ITA_otto_per_mille  }
+	}
+
+	#End the Eastern Heretics
+	focus = {
+		id = ITA_end_the_eastern_heretics
+		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
+		x = 12
+		y = 7
+		prerequisite = { focus = ITA_end_the_herertics  }
+	}
+
+	#Crush the Non-Believers
+	focus = {
+		id = ITA_crush_the_nonbelievers
+		icon = GFX_ITA_crush_the_nonbelievers-646325
+		x = 10
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_end_the_herertics  }
+	}
+
+	#End the Protestants
+	focus = {
+		id = ITA_end_the_protestants
+		icon = GFX_focus_up_joan_of_arc
+		x = 14
+		y = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_end_the_herertics  }
+	}
+
+	#One Church, One Humanity, One Empire!
+	focus = {
+		id = ITA_onechurchonehumanityoneempire
+		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		x = 12
+		y = 8
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_end_the_eastern_heretics  } prerequisite = { focus = ITA_crush_the_nonbelievers  } prerequisite = { focus = ITA_end_the_protestants  } prerequisite = { focus = ITA_a_new_roman_empire  }
+	}
+
+	#Grand Air Force
+	focus = {
+		id = ITA_grand_air_force
+		icon = GFX_ITA_grand_air_force-645859
+		x = 18
+		y = 1
+		search_filters = {
+			FOCUS_FILTER_MANPOWER
+		}
+		prerequisite = { focus = ITA_the_grand_speech  }
+	}
+
+	#Eliminate the Manglians
+	focus = {
+		id = ITA_eliminate_the_manglians
+		icon = GFX_goal_generic_attack_allies
+		x = 8
+		y = 4
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = ITA_a_new_roman_empire  }
+	}
+
+}
