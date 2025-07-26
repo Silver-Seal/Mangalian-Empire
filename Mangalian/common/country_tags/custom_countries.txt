@@ -1,5 +1,5 @@
 ITA = "countries/The Italian State.txt"
-MAN = "countries/Mangalian Empire.txt"
+MNE = "countries/Mangalian Empire.txt"
 SOV = "countries/Russian Empire.txt"
 POL = "countries/Polish Commonwealth.txt"
 COL = "countries/Gran Colombia.txt"
