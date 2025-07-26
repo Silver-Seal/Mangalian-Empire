@@ -1,0 +1,8 @@
+ITA = "countries/The Italian State.txt"
+MAN = "countries/Mangalian Empire.txt"
+SOV = "countries/Russian Empire.txt"
+POL = "countries/Polish Commonwealth.txt"
+COL = "countries/Gran Colombia.txt"
+RUS = "countries/The Russian Empire.txt"
+MEX = "countries/Mexican Empire.txt"
+KAE = "countries/Kalash Empire.txt"
