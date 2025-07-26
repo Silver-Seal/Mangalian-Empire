@@ -5,6 +5,7 @@ tags={
 name="Mangalian Empire"
 picture="thumbnail.png"
 replace_path="gfx/loadingscreens"
+replace_path="common/bookmarks"
 #replace_path="history/units"
 #replace_path="common/units"
 #replace_path="common/ai_equipment"
