@@ -4,9 +4,9 @@ ITA = {
 	color = rgb { 21 31 47 }
 	color_ui = rgb { 21 31 47 }
 }
-MAN = {
-	color = rgb { 255 39 63 }
-	color_ui = rgb { 255 39 63 }
+MNE = {
+	color = rgb { 196 7 7 }
+	color_ui = rgb { 196 7 7 }
 }
 SOV = {
 	color = rgb { 100 169 0 }

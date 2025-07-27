@@ -7,7 +7,7 @@ state = {
 	
 	history = {
 		
-		owner = CZE
+		owner = MNE
 
 		buildings = {
 			infrastructure = 3
@@ -25,26 +25,8 @@ state = {
 			11691 2 # Uzhhorod
 		}
 
-		add_core_of = CZE
-		add_core_of = SLO
-		add_core_of = UKR
+		add_core_of = MNE
 		
-		# This should isntead be reclaimable through Hungarian focuses with ww
-		IF = {
-			limit = {
-				NOT = {
-					has_dlc = "Gotterdammerung"
-				}
-			}
-			add_claim_by = HUN
-		}
-
-		1939.3.14 = {
-			owner = HUN
-			controller = HUN
-			remove_claim_by = HUN
-			add_core_of = HUN
-		}
 	}
 
 	provinces = {

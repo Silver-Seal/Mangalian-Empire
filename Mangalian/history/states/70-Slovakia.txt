@@ -14,7 +14,7 @@ state = {
 
 	history = {
 
-		owner = CZE
+		owner = MNE
 		
 		buildings = {
 			infrastructure = 3
@@ -36,12 +36,7 @@ state = {
 		}
 
 		add_core_of = CZE
-		add_core_of = SLO
-
-		1939.3.14 = {
-			owner = SLO
-			controller = SLO
-		}
+		add_core_of = MNE
 		
 	}
 

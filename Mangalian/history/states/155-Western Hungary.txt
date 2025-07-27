@@ -11,8 +11,8 @@ state = {
 
 	history = {
 
-		owner = HUN
-		add_core_of = HUN
+		owner = MNE
+		add_core_of = MNE
 
 		victory_points = {
 			6720 10 # Györ

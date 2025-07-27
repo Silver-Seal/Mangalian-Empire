@@ -18,7 +18,7 @@ state={
 		victory_points = {
 			3914 3
 		}
-		owner = GRE
+		owner = MNE
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -28,6 +28,7 @@ state={
 			}
 		}
 		add_core_of = GRE
+		add_core_of = MNE
 	}
 
 	provinces = {
