@@ -10,7 +10,7 @@ state={
 	state_category = large_town
 
 	history={
-		owner = TUR
+		owner = MNE
 		
 		victory_points = {
 			4112 15
@@ -27,6 +27,7 @@ state={
 			}
 		}
 		add_core_of = TUR
+		add_core_of = MNE
 		add_core_of = GRE
 	}
 

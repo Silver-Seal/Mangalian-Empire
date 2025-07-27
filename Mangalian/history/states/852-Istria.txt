@@ -8,13 +8,13 @@ state = {
 
 
 	history = {
-		owner = ITA
+		owner = MNE
 		buildings = {
 			infrastructure = 3
 			dockyard = 1
 		}
 		add_core_of = ITA
-		add_core_of = YUG
+		add_core_of = MNE
 	}
 
 	provinces = {

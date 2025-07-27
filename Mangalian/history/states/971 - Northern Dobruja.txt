@@ -1,7 +1,7 @@
 state = {
 	id = 971
 	name = "STATE_971" # Northern Dobruja
-	manpower = 490000
+	manpower = 750000
 	resources = {
 	}
 
@@ -13,12 +13,13 @@ state = {
 		add_core_of = MNE
 
 		victory_points = { 
-			657 3 
+			657 7 
 		}
 
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
+			arms_factory = 2
+			industrial_complex = 3
 			657 = {
 				naval_base = 8
 			}

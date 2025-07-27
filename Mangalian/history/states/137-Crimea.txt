@@ -7,7 +7,7 @@ state = {
 
 	history = {
 
-		owner = SOV
+		owner = MNE
 
 		victory_points = {
 			3686 20 # Sevastopol
@@ -40,6 +40,7 @@ state = {
 		}
 
 		add_core_of = SOV
+		add_core_of = MNE
 	}
 
 	provinces = {

@@ -4,7 +4,7 @@ state={
 	
 	history = {
 
-		owner = SOV
+		owner = MNE
 
 		victory_points = {
 			705 3 # Simferopol
@@ -17,6 +17,7 @@ state={
 			
 		}
 
+		add_core_of = MNE
 		add_core_of = SOV
 	}
 	

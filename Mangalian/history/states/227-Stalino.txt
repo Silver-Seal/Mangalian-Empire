@@ -7,7 +7,7 @@ state={
 	state_category = city
 
 	history={
-		owner = SOV
+		owner = MNE
 		buildings = {
 			infrastructure = 3 #was: 5
 		}
@@ -15,7 +15,7 @@ state={
 			6474 10
 		}
 		add_core_of = SOV
-		add_core_of = UKR
+		add_core_of = MNE
 	}
 
 	provinces={
