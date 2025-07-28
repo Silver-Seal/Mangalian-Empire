@@ -1,20 +1,20 @@
 
 #Custom colours start here
 ITA = {
-	color = rgb { 21 31 47 }
-	color_ui = rgb { 21 31 47 }
+	color = rgb { 237 173 8 }
+	color_ui = rgb { 237 173 8 }
 }
 MNE = {
-	color = rgb { 196 7 7 }
-	color_ui = rgb { 196 7 7 }
+	color = rgb { 204 51 51 }
+	color_ui = rgb { 204 51 51 }
 }
 SOV = {
 	color = rgb { 100 169 0 }
 	color_ui = rgb { 100 169 0 }
 }
 POL = {
-	color = rgb { 255 82 42 }
-	color_ui = rgb { 255 82 42 }
+	color = rgb { 245 118 93 }
+	color_ui = rgb { 245 118 93 }
 }
 COL = {
 	color = rgb { 239 177 49 }
@@ -31,4 +31,52 @@ MEX = {
 KAE = {
 	color = rgb { 0 0 0 }
 	color_ui = rgb { 0 0 0 }
+}
+CZE = {
+	color = rgb { 55 126 184 }
+	color_ui = rgb { 55 126 184 }
+}
+FRA = {
+	color = rgb { 227 26 27 }
+	color_ui = rgb { 227 26 27 }
+}
+SPR = {
+	color = rgb { 255 255 191 }
+	color_ui = rgb { 255 255 191 }
+}
+GER = {
+	color = rgb { 150 150 150 }
+	color_ui = rgb { 150 150 150 }
+}
+HOL = {
+	color = rgb { 253 141 60 }
+	color_ui = rgb { 253 141 60 }
+}
+DEN = {
+	color = rgb { 140 81 10 }
+	color_ui = rgb { 140 81 10 }
+}
+ENG = {
+	color = rgb { 65 182 196 }
+	color_ui = rgb { 65 182 196 }
+}
+SWE = {
+	color = rgb { 8 104 172 }
+	color_ui = rgb { 8 104 172 }
+}
+FIN = {
+	color = rgb { 128 177 211 }
+	color_ui = rgb { 128 177 211 }
+}
+SWI = {
+	color = rgb { 127 0 0 }
+	color_ui = rgb { 127 0 0 }
+}
+GRE = {
+	color = rgb { 228 26 28 }
+	color_ui = rgb { 228 26 28 }
+}
+IRE = {
+	color = rgb { 35 139 69 }
+	color_ui = rgb { 35 139 69 }
 }
