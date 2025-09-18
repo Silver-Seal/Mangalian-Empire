@@ -8,6 +8,301 @@ focus_tree = {
 			tag = POL
 		}
 	}
+	#Food Production is Essential for the Nation
+	focus = {
+		id = POL_food_production_is_essential_for_the_nation
+		icon = GFX_goal_unknown
+		x = 14
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_decentralize_the_nation  }
+		mutually_exclusive = { focus = POL_industry_will_propel_the_nation_onward  }
+	}
+
+	#War will be Waged on the Fields of Wheat
+	focus = {
+		id = POL_war_will_be_waged_on_the_fields_of_wheat
+		icon = GFX_goal_unknown
+		x = 14
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_food_production_is_essential_for_the_nation  }
+	}
+
+	#The Old Ways of Waging War
+	focus = {
+		id = POL_the_old_ways_of_waging_war
+		icon = GFX_goal_unknown
+		x = 14
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#The Tank Corps Mirror the Horses
+	focus = {
+		id = POL_the_tank_corps_mirror_the_horses
+		icon = GFX_goal_unknown
+		x = 12
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Mobile Infantry Allows for the Blitz
+	focus = {
+		id = POL_mobile_infantry_allows_for_the_blitz
+		icon = GFX_goal_unknown
+		x = 13
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Guns for the War Effort
+	focus = {
+		id = POL_guns_for_the_war_effort
+		icon = GFX_goal_unknown
+		x = 13
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Appoint a Grand Admiral
+	focus = {
+		id = POL_appoint_a_grand_admiral
+		icon = GFX_goal_unknown
+		x = 14
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+	}
+
+	#Our King will be an Emperor
+	focus = {
+		id = POL_our_king_will_be_an_emperor
+		icon = GFX_goal_unknown
+		x = 23
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_voice_of_the_people_and_country_as_one  }
+	}
+
+	#The Voice of the People
+	focus = {
+		id = POL_the_voice_of_the_people
+		icon = GFX_goal_unknown
+		x = 24
+		y = 11
+		cost = 2
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_a_steady_hand_will_guide_us  }
+	}
+
+	#The Vote of the People
+	focus = {
+		id = POL_the_vote_of_the_people
+		icon = GFX_goal_unknown
+		x = 22
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_a_steady_hand_will_guide_us  }
+	}
+
+	#The Voice of the People and Country as One
+	focus = {
+		id = POL_the_voice_of_the_people_and_country_as_one
+		icon = GFX_goal_unknown
+		x = 23
+		y = 12
+		cost = 7
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_voice_of_the_people  } prerequisite = { focus = POL_the_vote_of_the_people  }
+	}
+
+	#There will be only one Empire in Europe
+	focus = {
+		id = POL_there_will_be_only_one_empire_in_europe
+		icon = GFX_goal_unknown
+		x = 23
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_our_king_will_be_an_emperor  }
+	}
+
+	#A Steady Hand will Guide us
+	focus = {
+		id = POL_a_steady_hand_will_guide_us
+		icon = GFX_goal_unknown
+		x = 23
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_commonwealth_was_built_on_monarchism  }
+	}
+
+	#The Commonwealth was built on Monarchism
+	focus = {
+		id = POL_the_commonwealth_was_built_on_monarchism
+		icon = GFX_goal_unknown
+		x = 23
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_deciding_day  }
+	}
+
+	#Spread Democracy to Europe by any means
+	focus = {
+		id = POL_spread_democracy_to_europe_by_any_means
+		icon = GFX_goal_unknown
+		x = 19
+		y = 15
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_prepare_to_spread_democracy_to_europe  } prerequisite = { focus = POL_successfulsocietysarebuiltonelections  }
+	}
+
+	#Successful Society's are Built on Elections
+	focus = {
+		id = POL_successfulsocietysarebuiltonelections
+		icon = GFX_goal_unknown
+		x = 20
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_beg_the_us_for_aid  }
+	}
+
+	#Deport the Communists
+	focus = {
+		id = POL_deport_the_communists
+		icon = GFX_goal_unknown
+		x = 18
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_a_shinning_example_of_european_democracy  }
+	}
+
+	#Deport the Fascists
+	focus = {
+		id = POL_deport_the_fascists
+		icon = GFX_goal_unknown
+		x = 20
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_a_shinning_example_of_european_democracy  }
+	}
+
+	#Petition Democracies for Funding
+	focus = {
+		id = POL_petition_democracies_for_funding
+		icon = GFX_goal_unknown
+		x = 19
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_deport_the_communists  } prerequisite = { focus = POL_deport_the_fascists  }
+	}
+
+	#Beg the US for Aid
+	focus = {
+		id = POL_beg_the_us_for_aid
+		icon = GFX_goal_unknown
+		x = 19
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_petition_democracies_for_funding  }
+	}
+
+	#A Shinning Example of European Democracy
+	focus = {
+		id = POL_a_shinning_example_of_european_democracy
+		icon = GFX_goal_unknown
+		x = 19
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_commonwealth_will_be_a_example_to_europe  }
+	}
+
+	#The Commonwealth will be a Example to Europe
+	focus = {
+		id = POL_the_commonwealth_will_be_a_example_to_europe
+		icon = GFX_goal_unknown
+		x = 19
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_deciding_day  }
+	}
+
+	#Prepare to Spread Democracy to Europe
+	focus = {
+		id = POL_prepare_to_spread_democracy_to_europe
+		icon = GFX_goal_unknown
+		x = 18
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_beg_the_us_for_aid  }
+	}
+
 	#The Future of a Nation
 	focus = {
 		id = POL_the_future_of_a_nation
@@ -658,13 +953,14 @@ focus_tree = {
 	focus = {
 		id = POL_an_iron_legion_for_the_iron_wolf
 		icon = GFX_POL_an_iron_legion_for_the_iron_wolf-262043
-		x = 13
-		y = 3
+		x = 11
+		y = 9
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = POL_a_nation_renewed  }
+		prerequisite = { focus = POL_the_deciding_day  }
+		mutually_exclusive = { focus = POL_the_farmers_will_rule_the_land_of_fields  }
 	}
 
 	#A Nation Renewed
@@ -684,8 +980,8 @@ focus_tree = {
 	focus = {
 		id = POL_develop_lithuanian_central_lowland_farming
 		icon = GFX_POL_develop_lithuanian_central_lowland_farming-820101
-		x = 12
-		y = 4
+		x = 10
+		y = 10
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -697,8 +993,8 @@ focus_tree = {
 	focus = {
 		id = POL_vilniuswillbethecapital
 		icon = GFX_POL_vilniuswillbethecapital-820102
-		x = 14
-		y = 4
+		x = 12
+		y = 10
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -732,8 +1028,8 @@ focus_tree = {
 	focus = {
 		id = POL_lithuania_is_our_homeland
 		icon = GFX_POL_lithuania_is_our_homeland-820212
-		x = 13
-		y = 5
+		x = 11
+		y = 11
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -745,20 +1041,21 @@ focus_tree = {
 	focus = {
 		id = POL_topple_the_commonwealth
 		icon = GFX_POL_topple_the_commonwealth-262046
-		x = 13
-		y = 9
+		x = 11
+		y = 15
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
+		prerequisite = { focus = POL_centralize_the_nation  }
 	}
 
 	#We can Peacefully Resolve the Question of Union
 	focus = {
 		id = POL_we_can_peacefully_resolve_the_question_of_union
 		icon = GFX_goal_unknown
-		x = 12
-		y = 6
+		x = 10
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -771,14 +1068,132 @@ focus_tree = {
 	focus = {
 		id = POL_blood_will_be_spilled
 		icon = GFX_goal_unknown
-		x = 14
-		y = 6
+		x = 12
+		y = 12
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = POL_lithuania_is_our_homeland  }
 		mutually_exclusive = { focus = POL_we_can_peacefully_resolve_the_question_of_union  }
+	}
+
+	#Unite the homeland
+	focus = {
+		id = POL_unite_the_homeland
+		icon = GFX_goal_unknown
+		x = 11
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_we_can_peacefully_resolve_the_question_of_union  focus = POL_blood_will_be_spilled  }
+	}
+
+	#Centralize the Nation
+	focus = {
+		id = POL_centralize_the_nation
+		icon = GFX_goal_unknown
+		x = 11
+		y = 14
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_unite_the_homeland  }
+	}
+
+	#The Farmers will Rule the Land of Fields
+	focus = {
+		id = POL_the_farmers_will_rule_the_land_of_fields
+		icon = GFX_goal_unknown
+		x = 15
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_deciding_day  }
+		mutually_exclusive = { focus = POL_an_iron_legion_for_the_iron_wolf  }
+	}
+
+	#Decentralize the Nation
+	focus = {
+		id = POL_decentralize_the_nation
+		icon = GFX_goal_unknown
+		x = 15
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_the_farmers_will_rule_the_land_of_fields  }
+	}
+
+	#Industry will Propel the Nation Onward
+	focus = {
+		id = POL_industry_will_propel_the_nation_onward
+		icon = GFX_goal_unknown
+		x = 16
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_decentralize_the_nation  }
+		mutually_exclusive = { focus = POL_food_production_is_essential_for_the_nation  }
+	}
+
+	#Guns for the War Effort
+	focus = {
+		id = POL_guns_for_the_war_effort
+		icon = GFX_goal_unknown
+		x = 16
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_industry_will_propel_the_nation_onward  }
+	}
+
+	#A new Commonwealth, a Red Commonwealth
+	focus = {
+		id = POL_anewcommonwealtharedcommonwealth
+		icon = GFX_goal_unknown
+		x = 15
+		y = 13
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_guns_for_the_war_effort  focus = POL_war_will_be_waged_on_the_fields_of_wheat  }
+	}
+
+	#Spread Commonwealth Ideals Abroad
+	focus = {
+		id = POL_spread_commonwealth_ideals_abroad
+		icon = GFX_goal_unknown
+		x = 15
+		y = 14
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = POL_anewcommonwealtharedcommonwealth  }
+	}
+
+	#War, War Never Changes
+	focus = {
+		id = POL_warwarneverchanges
+		icon = GFX_goal_unknown
+		x = 12
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
 	}
 
 }
