@@ -1,0 +1,306 @@
+characters = {
+	#Władysław Grabski
+	leaders_wladyslawgrabski = {
+		name = leaders_wladyslawgrabski
+		portraits = {
+			civilian = {
+				large = GFX_leaders_wladyslawgrabski_large
+			}
+		}
+		country_leader = {
+			ideology = transitioning_democracy
+			traits = { economic_reformer industry_reformer democratic_reformer social_reformer popular_figurehead }
+			expire = "1930.3.1.6"
+		}
+	}
+	#Osiris Vizija
+	leaders_osiris_vizija = {
+		name = leaders_osiris_vizija
+		portraits = {
+			civilian = {
+				large = GFX_leaders_osiris_vizija_large
+				small = GFX_leaders_osiris_vizija_advisor
+			}
+			army = {
+				large = GFX_leaders_osiris_vizija_large
+				small = GFX_leaders_osiris_vizija_small
+			}
+		}
+		country_leader = {
+			ideology = Ultranationalism
+			traits = { autocratic_imperialist generallissimo }
+			expire = ""
+		}
+		advisor = {
+			slot = army_chief
+			idea_token = leaders_osiris_vizija
+			cost = 150
+			traits = { army_chief_maneuver_2 army_chief_offensive_2 }
+		}
+		field_marshal = {
+			traits = { war_hero trait_reckless organizer harsh_leader old_guard }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#Viktore Speczwil
+	leaders_viktore_speczwil = {
+		name = leaders_viktore_speczwil
+		portraits = {
+			civilian = {
+				small = GFX_leaders_viktore_speczwil_advisor
+			}
+			army = {
+				large = GFX_leaders_viktore_speczwil_large
+				small = GFX_leaders_viktore_speczwil_small
+			}
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = leaders_viktore_speczwil
+			cost = 150
+			traits = { navy_chief_decisive_battle_3 }
+		}
+		navy_leader = {
+			traits = { navy_career_officer bold gunnery_expert green_water_expert superior_tactician }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 4
+			maneuvering_skill = 3
+			coordination_skill = 1
+		}
+	}
+	#Wilhelm Waschenburg
+	leaders_wilhelm_waschenburg = {
+		name = leaders_wilhelm_waschenburg
+		portraits = {
+			civilian = {
+				small = GFX_leaders_wilhelm_waschenburg_advisor
+			}
+			army = {
+				large = GFX_leaders_wilhelm_waschenburg_large
+				small = GFX_leaders_wilhelm_waschenburg_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = leaders_wilhelm_waschenburg
+			cost = 150
+			traits = { air_airborne_2 mobile_warfare_expert }
+		}
+		corps_commander = {
+			traits = { inflexible_strategist media_personality commando war_hero ranger }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+	}
+	#Deimos Dufresne
+	leaders_deimos_dufresne = {
+		name = leaders_deimos_dufresne
+		portraits = {
+			civilian = {
+				small = GFX_leaders_deimos_dufresne_advisor
+			}
+			army = {
+				large = GFX_leaders_deimos_dufresne_large
+				small = GFX_leaders_deimos_dufresne_small
+			}
+		}
+		advisor = {
+			slot = high_command
+			idea_token = leaders_deimos_dufresne
+			cost = 150
+			traits = { army_artillery_2 army_entrenchment_1 }
+		}
+		corps_commander = {
+			traits = { bearer_of_artillery trickster  trait_reckless trait_engineer }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	#Anton Denikin
+	leaders_anton_denikin = {
+		name = leaders_anton_denikin
+		portraits = {
+			civilian = {
+				large = GFX_leaders_anton_denikin_large
+				small = GFX_leaders_anton_denikin_advisor
+			}
+			army = {
+				large = GFX_leaders_anton_denikin_large
+				small = GFX_leaders_anton_denikin_small
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchism
+			traits = { staunch_monarchist old_figurehead }
+			expire = ""
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = leaders_anton_denikin
+			cost = 
+			traits = { old_guard  staunch_monarchist }
+		}
+		field_marshal = {
+			traits = { old_guard career_officer trait_BUL_tsar_loyalist }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	#Alec Red Trent
+	leaders_alec_red_trent = {
+		name = leaders_alec_red_trent
+		portraits = {
+			civilian = {
+				small = GFX_leaders_alec_red_trent_advisor
+			}
+			army = {
+				large = GFX_leaders_alec_red_trent_large
+				small = GFX_leaders_alec_red_trent_small
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = leaders_alec_red_trent
+			cost = 150
+			traits = { baron_of_terror fascist_militia_leader }
+		}
+		corps_commander = {
+			traits = { harsh_leader }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	#Lawrence Wolfe
+	leaders_lawrence_wolfe = {
+		name = leaders_lawrence_wolfe
+		portraits = {
+			civilian = {
+				large = GFX_leaders_lawrence_wolfe_large
+				small = GFX_leaders_lawrence_wolfe_advisor
+			}
+		}
+		country_leader = {
+			ideology = provisional_government
+			traits = { eager_collaborator  head_of_intelligence }
+			expire = ""
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = leaders_lawrence_wolfe
+			cost = 150
+			traits = { head_of_intelligence }
+		}
+	}
+	#Nestor Makhno
+	leaders_nestor_makhno = {
+		name = leaders_nestor_makhno
+		portraits = {
+			civilian = {
+				large = GFX_leaders_nestor_makhno_large
+			}
+			army = {
+				large = GFX_leaders_nestor_makhno_large
+				small = GFX_leaders_nestor_makhno_small
+			}
+		}
+		country_leader = {
+			ideology = anarchocommunism
+			traits = { anarchist_zeal our_right_to_survive popular_figurehead }
+			expire = ""
+		}
+		corps_commander = {
+			traits = { cavalry_officer scavenger trickster trait_reckless media_personality ranger }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 3
+		}
+	}
+	#Aidan McCarthy
+	leaders_aidan_mccarthy = {
+		name = leaders_aidan_mccarthy
+		portraits = {
+			civilian = {
+				small = GFX_leaders_aidan_mccarthy_advisor
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = leaders_aidan_mccarthy
+			cost = 150
+			traits = { prince_of_terror anti_communist_crusader }
+		}
+	}
+	#Kim Chwa Chin
+	leaders_kim_chwa_chin = {
+		name = leaders_kim_chwa_chin
+		portraits = {
+			civilian = {
+				large = GFX_leaders_kim_chwa_chin_large
+			}
+			army = {
+				large = GFX_leaders_kim_chwa_chin_large
+				small = GFX_leaders_kim_chwa_chin_small
+			}
+		}
+		country_leader = {
+			ideology = anarchocommunism
+			traits = { unscrupulous_orchestrator stalin_great_commander }
+			expire = ""
+		}
+		field_marshal = {
+			traits = { war_hero politically_connected infantry_officer defensive_doctrine inflexible_strategist organizer }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	#Pyotr Stolypin
+	leaders_pyotr_stolypin = {
+		name = leaders_pyotr_stolypin
+		portraits = {
+			civilian = {
+				large = GFX_leaders_pyotr_stolypin_large
+			}
+		}
+		country_leader = {
+			ideology = absolute_monarchism
+			traits = { economic_reformer man_of_the_nation }
+			expire = "1930.5.9.11"
+		}
+	}
+	#Konstantin Rodzaevsky
+	leaders_konstantin_rodzaevsky = {
+		name = leaders_konstantin_rodzaevsky
+		portraits = {
+			civilian = {
+				large = GFX_leaders_konstantin_rodzaevsky_large
+			}
+		}
+		country_leader = {
+			ideology = ultramilitarism
+			traits = { substance_addict trait_SOV_monarchist_sympathizer autocratic_imperialist }
+			expire = ""
+		}
+	}
+}

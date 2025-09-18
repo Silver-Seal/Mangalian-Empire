@@ -35,3 +35,5 @@ add_ideas = {
 	civilian_economy
 }
 
+recruit_character = leaders_wladyslawgrabski
+
