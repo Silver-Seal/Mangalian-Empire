@@ -1,0 +1,21 @@
+spriteTypes = { 
+	##Icon For: Nicolas II
+	SpriteType = { 
+		name = "GFX_idea_nicolas_ii-122549"
+		texturefile = "gfx/interface/ideas/russia-starting-ideas/nicolas_ii-122549.dds"
+	}
+
+	##Icon For: Siberian Reforms 2
+	SpriteType = { 
+		name = "GFX_idea_siberian_reforms_2-1366"
+		texturefile = "gfx/interface/ideas/russia-starting-ideas/siberian_reforms_2-1366.dds"
+	}
+
+	##Icon For: Siberian Reforms
+	SpriteType = { 
+		name = "GFX_idea_siberian_reforms-1366"
+		texturefile = "gfx/interface/ideas/russia-starting-ideas/siberian_reforms-1366.dds"
+	}
+
+ 
+ }
