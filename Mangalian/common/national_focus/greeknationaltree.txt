@@ -208,7 +208,7 @@ focus_tree = {
 		icon = GFX_GRE_nationalize_businesses-262036
 		x = 7
 		y = 5
-		cost = 4
+		cost = 3
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -221,7 +221,7 @@ focus_tree = {
 		icon = GFX_GRE_work_with_business_owners-645469
 		x = 9
 		y = 5
-		cost = 4
+		cost = 3
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -235,7 +235,7 @@ focus_tree = {
 		icon = GFX_GRE_land_tax-645949
 		x = 7
 		y = 4
-		cost = 4
+		cost = 3
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
@@ -452,32 +452,6 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRE_cave_to_the_giant  }
 		mutually_exclusive = { focus = GRE_desperate_negotiations  }
-	}
-
-	#Endless Concessions
-	focus = {
-		id = GRE_endless_concessions
-		icon = GFX_focus_mex_privatisation
-		x = 0
-		y = 11
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_FRA_OCCUPATION_COST
-		}
-		prerequisite = { focus = GRE_desperate_negotiations  }
-	}
-
-	#Put On A Good Show
-	focus = {
-		id = GRE_put_on_a_good_show
-		icon = GFX_GRE_put_on_a_good_show-645941
-		x = 2
-		y = 11
-		cost = 5
-		search_filters = {
-			FOCUS_FILTER_FRA_OCCUPATION_COST
-		}
-		prerequisite = { focus = GRE_bluff_our_hand  }
 	}
 
 }

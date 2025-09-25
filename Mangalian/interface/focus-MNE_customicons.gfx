@@ -304,17 +304,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_MNE_imperial_autarky-645940"
-		texturefile = "gfx/interface/goals/GFX_MNE_imperial_autarky-645940.dds"
+		name = "GFX_MNE_side_with_the_industrialists-645940"
+		texturefile = "gfx/interface/goals/GFX_MNE_side_with_the_industrialists-645940.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_MNE_imperial_autarky-645940_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_imperial_autarky-645940.dds"
+		name = "GFX_MNE_side_with_the_industrialists-645940_shine"
+		texturefile = "gfx/interface/goals/GFX_MNE_side_with_the_industrialists-645940.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_imperial_autarky-645940.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MNE_side_with_the_industrialists-645940.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -326,7 +326,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_imperial_autarky-645940.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MNE_side_with_the_industrialists-645940.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -380,17 +380,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_MNE_liberate_the_markets-645857"
-		texturefile = "gfx/interface/goals/GFX_MNE_liberate_the_markets-645857.dds"
+		name = "GFX_MNE_side_with_the_agriculturalists-645857"
+		texturefile = "gfx/interface/goals/GFX_MNE_side_with_the_agriculturalists-645857.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_MNE_liberate_the_markets-645857_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_liberate_the_markets-645857.dds"
+		name = "GFX_MNE_side_with_the_agriculturalists-645857_shine"
+		texturefile = "gfx/interface/goals/GFX_MNE_side_with_the_agriculturalists-645857.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_liberate_the_markets-645857.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MNE_side_with_the_agriculturalists-645857.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -402,7 +402,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_liberate_the_markets-645857.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MNE_side_with_the_agriculturalists-645857.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -456,17 +456,17 @@ spriteTypes = {	##Icon For:
 
 	##Icon For: 
 	SpriteType = { 
-		name = "GFX_MNE_modernize_the_academys-645934"
-		texturefile = "gfx/interface/goals/GFX_MNE_modernize_the_academys-645934.dds"
+		name = "GFX_MNE_military_school_reform-645934"
+		texturefile = "gfx/interface/goals/GFX_MNE_military_school_reform-645934.dds"
 	}
 
 	##Icon Shine For: 
 	SpriteType = { 
-		name = "GFX_MNE_modernize_the_academys-645934_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_modernize_the_academys-645934.dds"
+		name = "GFX_MNE_military_school_reform-645934_shine"
+		texturefile = "gfx/interface/goals/GFX_MNE_military_school_reform-645934.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_modernize_the_academys-645934.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MNE_military_school_reform-645934.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = -90.0
 			animationlooping = no
@@ -478,7 +478,7 @@ spriteTypes = {	##Icon For:
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_modernize_the_academys-645934.dds"
+			animationmaskfile = "gfx/interface/goals/GFX_MNE_military_school_reform-645934.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no
@@ -783,158 +783,6 @@ spriteTypes = {	##Icon For:
 		}
 		animation = {
 			animationmaskfile = "gfx/interface/goals/GFX_MNE_standardize_railway_gauges-645972.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: 
-	SpriteType = { 
-		name = "GFX_MNE_work_with_young_officers-262056"
-		texturefile = "gfx/interface/goals/GFX_MNE_work_with_young_officers-262056.dds"
-	}
-
-	##Icon Shine For: 
-	SpriteType = { 
-		name = "GFX_MNE_work_with_young_officers-262056_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_work_with_young_officers-262056.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_work_with_young_officers-262056.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_work_with_young_officers-262056.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: 
-	SpriteType = { 
-		name = "GFX_MNE_expand_bohemian_motorworks-645991"
-		texturefile = "gfx/interface/goals/GFX_MNE_expand_bohemian_motorworks-645991.dds"
-	}
-
-	##Icon Shine For: 
-	SpriteType = { 
-		name = "GFX_MNE_expand_bohemian_motorworks-645991_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_expand_bohemian_motorworks-645991.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_expand_bohemian_motorworks-645991.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_expand_bohemian_motorworks-645991.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: 
-	SpriteType = { 
-		name = "GFX_MNE_modernize_great_war_railway_guns-645973"
-		texturefile = "gfx/interface/goals/GFX_MNE_modernize_great_war_railway_guns-645973.dds"
-	}
-
-	##Icon Shine For: 
-	SpriteType = { 
-		name = "GFX_MNE_modernize_great_war_railway_guns-645973_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_modernize_great_war_railway_guns-645973.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_modernize_great_war_railway_guns-645973.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_modernize_great_war_railway_guns-645973.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = 90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		legacy_lazy_load = no
-	}
-
-	##Icon For: 
-	SpriteType = { 
-		name = "GFX_MNE_recruit_cossack_units-262118"
-		texturefile = "gfx/interface/goals/GFX_MNE_recruit_cossack_units-262118.dds"
-	}
-
-	##Icon Shine For: 
-	SpriteType = { 
-		name = "GFX_MNE_recruit_cossack_units-262118_shine"
-		texturefile = "gfx/interface/goals/GFX_MNE_recruit_cossack_units-262118.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_recruit_cossack_units-262118.dds"
-			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
-			animationrotation = -90.0
-			animationlooping = no
-			animationtime = 0.75
-			animationdelay = 0
-			animationblendmode = "add"
-			animationtype = "scrolling"
-			animationrotationoffset = { x = 0.0 y = 0.0 }
-			animationtexturescale = { x = 1.0 y = 1.0 } 
-		}
-		animation = {
-			animationmaskfile = "gfx/interface/goals/GFX_MNE_recruit_cossack_units-262118.dds"
 			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
 			animationrotation = 90.0
 			animationlooping = no

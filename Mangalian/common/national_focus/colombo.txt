@@ -12,7 +12,7 @@ focus_tree = {
 	focus = {
 		id = COL_aftermathofthe1929coupdetat
 		icon = GFX_focus_usa_voter_registration_act
-		x = 14
+		x = 11
 		y = 0
 		cost = 5
 		search_filters = {
@@ -20,9 +20,9 @@ focus_tree = {
 		}
 	}
 
-	#Suspend Elections Indefinetely
+	#Secure the Pinilla Regime
 	focus = {
-		id = COL_suspend_elections_indefinetely
+		id = COL_secure_the_pinilla_regime
 		icon = GFX_focus_generic_strike_at_democracy2
 		x = 8
 		y = 1
@@ -36,47 +36,47 @@ focus_tree = {
 	focus = {
 		id = COL_trade_union_counterrevolution
 		icon = GFX_focus_ger_great_red_menace
-		x = 15
+		x = 12
 		y = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = COL_aftermathofthe1929coupdetat  }
-		mutually_exclusive = { focus = COL_suspend_elections_indefinetely  }
+		mutually_exclusive = { focus = COL_secure_the_pinilla_regime  }
 	}
 
 	#Liberal Plot
 	focus = {
 		id = COL_liberal_plot
 		icon = GFX_focus_spa_save_the_alcazar
-		x = 24
+		x = 19
 		y = 1
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = COL_aftermathofthe1929coupdetat  }
-		mutually_exclusive = { focus = COL_suspend_elections_indefinetely  } mutually_exclusive = { focus = COL_trade_union_counterrevolution  }
+		mutually_exclusive = { focus = COL_secure_the_pinilla_regime  } mutually_exclusive = { focus = COL_trade_union_counterrevolution  }
 	}
 
 	#Work with Rebel Forces
 	focus = {
 		id = COL_work_with_rebel_forces
 		icon = GFX_COL_work_with_rebel_forces-645755
-		x = 22
+		x = 18
 		y = 2
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = COL_liberal_plot  }
-		mutually_exclusive = { focus = COL_hardline_against_socialism  }
+		mutually_exclusive = { focus = COL_maintain_integrity  }
 	}
 
-	#Hardline against Socialism
+	#Maintain Integrity
 	focus = {
-		id = COL_hardline_against_socialism
-		icon = GFX_COL_hardline_against_socialism-645772
-		x = 24
+		id = COL_maintain_integrity
+		icon = GFX_COL_maintain_integrity-645772
+		x = 20
 		y = 2
 		cost = 5
 		search_filters = {
@@ -90,13 +90,25 @@ focus_tree = {
 	focus = {
 		id = COL_overthrow_the_tyrant
 		icon = GFX_COL_overthrow_the_tyrant-4
-		x = 23
-		y = 3
+		x = 19
+		y = 4
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_work_with_rebel_forces  focus = COL_hardline_against_socialism  }
+		prerequisite = { focus = COL_work_with_rebel_forces  focus = COL_maintain_integrity  }
+	}
+
+	#Industry
+	focus = {
+		id = COL_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 25
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
 	}
 
 	#Army
@@ -139,7 +151,7 @@ focus_tree = {
 	focus = {
 		id = COL_negotiate_with_leftist_guerillas
 		icon = GFX_COL_negotiate_with_leftist_guerillas-262127
-		x = 13
+		x = 11
 		y = 2
 		cost = 5
 		search_filters = {
@@ -152,7 +164,7 @@ focus_tree = {
 	focus = {
 		id = COL_reorganized_colombian_senate
 		icon = GFX_COL_reorganized_colombian_senate-341
-		x = 16
+		x = 14
 		y = 2
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -170,15 +182,15 @@ focus_tree = {
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_suspend_elections_indefinetely  }
-		mutually_exclusive = { focus = COL_venezuelancoupdetat  }
+		prerequisite = { focus = COL_secure_the_pinilla_regime  }
+		mutually_exclusive = { focus = COL_aromeofthetropics  }
 	}
 
 	#Stamp out Socialist Elements
 	focus = {
 		id = COL_stamp_out_socialist_elements
 		icon = GFX_focus_ger_assassinate_mussolini
-		x = 4
+		x = 3
 		y = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -190,13 +202,13 @@ focus_tree = {
 	focus = {
 		id = COL_begin_a_constitutional_rewrite
 		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 20
-		y = 3
+		x = 17
+		y = 5
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_work_with_rebel_forces  }
+		prerequisite = { focus = COL_overthrow_the_tyrant  }
 	}
 
 	#Enforce Presidential Supremacy
@@ -228,8 +240,8 @@ focus_tree = {
 	focus = {
 		id = COL_greaterthanbolivar
 		icon = GFX_COL_greaterthanbolivar-829093
-		x = 7
-		y = 16
+		x = 6
+		y = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -239,8 +251,8 @@ focus_tree = {
 	focus = {
 		id = COL_equal_conscription_among_the_genders
 		icon = GFX_COL_equal_conscription_among_the_genders-645530
-		x = 16
-		y = 9
+		x = 12
+		y = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -251,59 +263,58 @@ focus_tree = {
 	focus = {
 		id = COL_right_to_work
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		x = 15
-		y = 8
+		x = 12
+		y = 4
 		cost = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 
-	#Venezuelan Coup d'etat
+	#A Rome of the Tropics?
 	focus = {
-		id = COL_venezuelancoupdetat
+		id = COL_aromeofthetropics
 		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
-		x = 11
+		x = 9
 		y = 2
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_suspend_elections_indefinetely  }
+		prerequisite = { focus = COL_secure_the_pinilla_regime  }
 	}
 
 	#Supporting Likeminded Allies
 	focus = {
 		id = COL_supporting_likeminded_allies
 		icon = GFX_COL_supporting_likeminded_allies-262024
-		x = 6
-		y = 10
+		x = 5
+		y = 9
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_introduce_state_controlled_unions  focus = COL_establish_the_secret_police  }
 	}
 
 	#Nationalize Foreign Assets
 	focus = {
 		id = COL_nationalize_foreign_assets
 		icon = GFX_focus_spa_the_spanish_miracle
-		x = 13
+		x = 12
 		y = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 	}
 
-	#Rome of the Tropics?
+	#Caesar of Venice
 	focus = {
-		id = COL_romeofthetropics
-		icon = GFX_COL_romeofthetropics-645492
-		x = 11
+		id = COL_caesar_of_venice
+		icon = GFX_COL_caesar_of_venice-645492
+		x = 9
 		y = 3
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_venezuelancoupdetat  }
+		prerequisite = { focus = COL_aromeofthetropics  }
 	}
 
 	#Standardize the Denarius
@@ -311,7 +322,7 @@ focus_tree = {
 		id = COL_standardize_the_denarius
 		icon = GFX_COL_standardize_the_denarius-645670
 		x = 10
-		y = 5
+		y = 4
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -321,8 +332,8 @@ focus_tree = {
 	focus = {
 		id = COL_march_on_gallia
 		icon = GFX_COL_march_on_gallia-646368
-		x = 14
-		y = 9
+		x = 10
+		y = 6
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -332,7 +343,7 @@ focus_tree = {
 	focus = {
 		id = COL_vanquishthepersianmenace
 		icon = GFX_COL_vanquishthepersianmenace-646319
-		x = 13
+		x = 11
 		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -343,8 +354,8 @@ focus_tree = {
 	focus = {
 		id = COL_into_the_brittannic_isles
 		icon = GFX_COL_into_the_brittannic_isles-404
-		x = 12
-		y = 9
+		x = 9
+		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -354,8 +365,8 @@ focus_tree = {
 	focus = {
 		id = COL_novoordineprosternere
 		icon = GFX_COL_novoordineprosternere-645453
-		x = 12
-		y = 10
+		x = 10
+		y = 8
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -365,8 +376,8 @@ focus_tree = {
 	focus = {
 		id = COL_reintroduce_the_praetorian_gaurd
 		icon = GFX_focus_generic_little_entente
-		x = 9
-		y = 6
+		x = 8
+		y = 4
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -376,7 +387,7 @@ focus_tree = {
 	focus = {
 		id = COL_foster_military_aura
 		icon = GFX_focus_eng_expose_the_belly_of_the_bear
-		x = 12
+		x = 10
 		y = 5
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
@@ -387,8 +398,8 @@ focus_tree = {
 	focus = {
 		id = COL_juliuscaesarmanifested
 		icon = GFX_COL_juliuscaesarmanifested-88
-		x = 12
-		y = 15
+		x = 11
+		y = 13
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -406,57 +417,12 @@ focus_tree = {
 		prerequisite = { focus = COL_disband_the_senate  }
 	}
 
-	#Demand Amazonian Buffer
-	focus = {
-		id = COL_demand_amazonian_buffer
-		icon = GFX_focus_por_recover_latin_america
-		x = 6
-		y = 14
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-
-	#Avenge the Shame of 1903
-	focus = {
-		id = COL_avenge_the_shame_of_1903
-		icon = GFX_COL_avenge_the_shame_of_1903-645575
-		x = 8
-		y = 14
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-
-	#Divide Central America
-	focus = {
-		id = COL_divide_central_america
-		icon = GFX_focus_TUR_misak_i_milli
-		x = 7
-		y = 15
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-
-	#On to the South American Stage
-	focus = {
-		id = COL_on_to_the_south_american_stage
-		icon = GFX_COL_on_to_the_south_american_stage-645982
-		x = 7
-		y = 12
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_an_alliance_of_the_strong  focus = COL_find_a_suitable_partner  }
-	}
-
 	#Negotiate Venezuelan Support
 	focus = {
 		id = COL_negotiate_venezuelan_support
 		icon = GFX_focus_hol_united_netherlands
-		x = 3
-		y = 7
+		x = 2
+		y = 6
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -467,8 +433,8 @@ focus_tree = {
 	focus = {
 		id = COL_amnesty_for_ecuadorian_rebels
 		icon = GFX_focus_generic_support_the_left_right
-		x = 2
-		y = 8
+		x = 1
+		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -479,20 +445,20 @@ focus_tree = {
 	focus = {
 		id = COL_rejuvinate_rural_areas
 		icon = GFX_COL_rejuvinate_rural_areas-645921
-		x = 4
-		y = 8
+		x = 3
+		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
 		prerequisite = { focus = COL_negotiate_venezuelan_support  }
 	}
 
-	#No Compromise for Dogs
+	#No Mercy, No Quarter!
 	focus = {
-		id = COL_no_compromise_for_dogs
+		id = COL_nomercynoquarter
 		icon = GFX_goal_demand_sudetenland
-		x = 8
-		y = 8
+		x = 5
+		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -503,8 +469,8 @@ focus_tree = {
 	focus = {
 		id = COL_introduce_state_controlled_unions
 		icon = GFX_COL_introduce_state_controlled_unions-59
-		x = 5
-		y = 9
+		x = 3
+		y = 8
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -515,8 +481,8 @@ focus_tree = {
 	focus = {
 		id = COL_secure_the_heart_of_gran_colombia
 		icon = GFX_focus_focus_fra_maquis
-		x = 7
-		y = 7
+		x = 5
+		y = 6
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -528,8 +494,8 @@ focus_tree = {
 	focus = {
 		id = COL_increase_military_presence_in_the_andes
 		icon = GFX_focus_GRE_a_land_of_mountains
-		x = 10
-		y = 8
+		x = 7
+		y = 7
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -540,8 +506,8 @@ focus_tree = {
 	focus = {
 		id = COL_into_the_atlantic
 		icon = GFX_COL_into_the_atlantic-404
-		x = 12
-		y = 11
+		x = 11
+		y = 9
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -551,8 +517,8 @@ focus_tree = {
 	focus = {
 		id = COL_rethink_greek_fire
 		icon = GFX_focus_GRE_reviving_the_double_headed_eagle
-		x = 12
-		y = 12
+		x = 11
+		y = 10
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -562,8 +528,8 @@ focus_tree = {
 	focus = {
 		id = COL_venividivici
 		icon = GFX_focus_jap_strike_south
-		x = 12
-		y = 13
+		x = 11
+		y = 11
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
@@ -573,167 +539,11 @@ focus_tree = {
 	focus = {
 		id = COL_the_eternal_city_reclaimed
 		icon = GFX_focus_generic_concessions
-		x = 12
-		y = 14
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-
-	#Work with the Catholic Church?
-	focus = {
-		id = COL_workwiththecatholicchurch
-		icon = GFX_COL_workwiththecatholicchurch-645904
-		x = 16
-		y = 3
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_reorganized_colombian_senate  }
-	}
-
-	#Enforce Separation of Church and State
-	focus = {
-		id = COL_enforce_separation_of_church_and_state
-		icon = GFX_COL_enforce_separation_of_church_and_state-645988
-		x = 15
-		y = 4
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_workwiththecatholicchurch  }
-	}
-
-	#Christian Socialism
-	focus = {
-		id = COL_christian_socialism
-		icon = GFX_focus_eng_concessions_to_the_trade_unions
-		x = 17
-		y = 4
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_workwiththecatholicchurch  }
-		mutually_exclusive = { focus = COL_enforce_separation_of_church_and_state  }
-	}
-
-	#Establish the Secret Police
-	focus = {
-		id = COL_establish_the_secret_police
-		icon = GFX_COL_establish_the_secret_police-645980
-		x = 8
-		y = 9
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_no_compromise_for_dogs  }
-	}
-
-	#Put an end to the South American Frankenstein
-	focus = {
-		id = COL_put_an_end_to_the_south_american_frankenstein
-		icon = GFX_COL_put_an_end_to_the_south_american_frankenstein-645865
-		x = 7
-		y = 13
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-
-	#An Alliance of the Strong
-	focus = {
-		id = COL_an_alliance_of_the_strong
-		icon = GFX_focus_generic_diplomatic_treaty
-		x = 5
-		y = 11
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_supporting_likeminded_allies  }
-		mutually_exclusive = { focus = COL_find_a_suitable_partner  }
-	}
-
-	#A Venetian Caesar
-	focus = {
-		id = COL_a_venetian_caesar
-		icon = GFX_focus_BUL_form_a_regency_council
 		x = 11
-		y = 4
+		y = 12
 		search_filters = {
 			FOCUS_FILTER_POLITICAL
 		}
-		prerequisite = { focus = COL_romeofthetropics  }
-	}
-
-	#Find a Suitable Partner
-	focus = {
-		id = COL_find_a_suitable_partner
-		icon = GFX_COL_find_a_suitable_partner-645488
-		x = 8
-		y = 11
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_supporting_likeminded_allies  }
-	}
-
-	#Stamp out Revolutionanism
-	focus = {
-		id = COL_stamp_out_revolutionanism
-		icon = GFX_COL_stamp_out_revolutionanism-645743
-		x = 10
-		y = 9
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_increase_military_presence_in_the_andes  }
-	}
-
-	#Foster Communal Identity
-	focus = {
-		id = COL_foster_communal_identity
-		icon = GFX_focus_TUR_reform_the_balkan_pact
-		x = 18
-		y = 5
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_christian_socialism  }
-	}
-
-	#Invite American Companies
-	focus = {
-		id = COL_invite_american_companies
-		icon = GFX_COL_invite_american_companies-645451
-		x = 25
-		y = 3
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_hardline_against_socialism  }
-	}
-
-	#Loosen the Markets
-	focus = {
-		id = COL_loosen_the_markets
-		icon = GFX_focus_usa_reestablish_the_gold_standard
-		x = 25
-		y = 4
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-	}
-
-	#Back to Normal
-	focus = {
-		id = COL_back_to_normal
-		icon = GFX_COL_back_to_normal-262035
-		x = 27
-		y = 3
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = COL_hardline_against_socialism  }
 	}
 
 }

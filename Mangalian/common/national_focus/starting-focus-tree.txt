@@ -1,6 +1,6 @@
 focus_tree = {
 	id = starting-focus-tree
-	continuous_focus_position = { x = 2240 y = 530 } 
+	continuous_focus_position = { x = 1670 y = 10 } 
 	country = {
 		factor = 0
 		modifier = {
@@ -217,26 +217,11 @@ focus_tree = {
 	focus = {
 		id = SOV_finish_the_stolypin_reforms
 		icon = GFX_SOV_finish_the_stolypin_reforms-645921
-		x = 10
+		x = 1
 		y = 0
 		cost = 4
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
-		}
-		ai_will_do = { factor = 1 }
-		completion_reward = {
-			swap_ideas = {
-			    remove_idea = SOV_siberian_reforms
-			    add_idea = SOV_siberian_reforms_3
-			}
-			
-			
-			
-			
-			
-			
-			
-			
 		}
 	}
 
@@ -244,61 +229,39 @@ focus_tree = {
 	focus = {
 		id = SOV_begin_shipping_siberian_grain_back
 		icon = GFX_SOV_begin_shipping_siberian_grain_back-645857
-		x = 10
+		x = 1
 		y = 1
 		cost = 4
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = SOV_finish_the_stolypin_reforms  }
-		completion_reward = {
-			swap_ideas = {
-			    remove_idea = SOV_siberian_reforms_3
-			    add_idea = SOV_siberian_reforms_2
-			}
-			
-			
-			
-			
-			
-		}
 	}
 
 	#End the Resetlement
 	focus = {
 		id = SOV_end_the_resetlement
 		icon = GFX_SOV_end_the_resetlement-645991
-		x = 10
+		x = 1
 		y = 2
 		cost = 4
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = SOV_begin_shipping_siberian_grain_back  }
-		completion_reward = {
-			swap_ideas = {
-			    remove_idea = SOV_siberian_reforms_2
-			    add_idea = SOV_siberian_reforms_4
-			}
-		}
 	}
 
 	#Reflect
 	focus = {
 		id = SOV_reflect
 		icon = GFX_SOV_reflect-262133
-		x = 10
+		x = 1
 		y = 3
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_STABILITY
 		}
 		prerequisite = { focus = SOV_end_the_resetlement  }
-		completion_reward = {
-			add_political_power = 50
-			
-			
-		}
 	}
 
 	#Rollback Stolypin's Reforms

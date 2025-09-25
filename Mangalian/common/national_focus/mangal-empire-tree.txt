@@ -12,13 +12,13 @@ focus_tree = {
 	focus = {
 		id = MNE_commit_to_five_year_plan
 		icon = GFX_MNE_commit_to_five_year_plan-645960
-		x = 22
+		x = 20
 		y = 5
 		cost = 6
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = MNE_imperial_autarky  }
+		prerequisite = { focus = MNE_side_with_the_industrialists  }
 	}
 
 	#Break Up Officer Cliques
@@ -51,7 +51,7 @@ focus_tree = {
 	focus = {
 		id = MNE_new_economic_plan
 		icon = GFX_focus_hol_abandon_the_gold_standard
-		x = 20
+		x = 18
 		y = 3
 		cost = 2
 		search_filters = {
@@ -95,7 +95,7 @@ focus_tree = {
 	focus = {
 		id = MNE_gathering_the_opposition
 		icon = GFX_MNE_gathering_the_opposition-262055
-		x = 32
+		x = 26
 		y = 1
 		cost = 1
 		search_filters = {
@@ -136,11 +136,11 @@ focus_tree = {
 		mutually_exclusive = { focus = MNE_crushvizijastriumvirate  }
 	}
 
-	#Imperial Autarky
+	#Side with the Industrialists
 	focus = {
-		id = MNE_imperial_autarky
-		icon = GFX_MNE_imperial_autarky-645940
-		x = 22
+		id = MNE_side_with_the_industrialists
+		icon = GFX_MNE_side_with_the_industrialists-645940
+		x = 20
 		y = 4
 		cost = 3
 		search_filters = {
@@ -162,18 +162,18 @@ focus_tree = {
 		prerequisite = { focus = MNE_crushvizijastriumvirate  }
 	}
 
-	#Liberate the Markets
+	#Side with the Agriculturalists
 	focus = {
-		id = MNE_liberate_the_markets
-		icon = GFX_MNE_liberate_the_markets-645857
-		x = 18
+		id = MNE_side_with_the_agriculturalists
+		icon = GFX_MNE_side_with_the_agriculturalists-645857
+		x = 16
 		y = 4
 		cost = 3
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = MNE_new_economic_plan  }
-		mutually_exclusive = { focus = MNE_imperial_autarky  }
+		mutually_exclusive = { focus = MNE_side_with_the_industrialists  }
 	}
 
 	#Waschenburg's Resignation
@@ -189,10 +189,10 @@ focus_tree = {
 		prerequisite = { focus = MNE_remove_speczwil  }
 	}
 
-	#Modernize the Academys
+	#Military School Reform
 	focus = {
-		id = MNE_modernize_the_academys
-		icon = GFX_MNE_modernize_the_academys-645934
+		id = MNE_military_school_reform
+		icon = GFX_MNE_military_school_reform-645934
 		x = 8
 		y = 4
 		cost = 3
@@ -202,35 +202,24 @@ focus_tree = {
 		prerequisite = { focus = MNE_addressingvizijasconcerns  }
 	}
 
-	#Increase Private Ownership
-	focus = {
-		id = MNE_increase_private_ownership
-		icon = GFX_focus_fra_devalue_the_franc
-		x = 16
-		y = 5
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-	}
-
 	#Ally Technocrats
 	focus = {
 		id = MNE_ally_technocrats
 		icon = GFX_MNE_ally_technocrats-645473
-		x = 20
+		x = 18
 		y = 5
 		cost = 5
 		search_filters = {
 			FOCUS_FILTER_RESEARCH
 		}
-		prerequisite = { focus = MNE_imperial_autarky  }
+		prerequisite = { focus = MNE_side_with_the_industrialists  focus = MNE_side_with_the_agriculturalists  }
 	}
 
 	#Purge Disloyalty
 	focus = {
 		id = MNE_purge_disloyalty
 		icon = GFX_MNE_purge_disloyalty-645907
-		x = 14
+		x = 15
 		y = 6
 		cost = 10
 		search_filters = {
@@ -243,57 +232,32 @@ focus_tree = {
 	focus = {
 		id = MNE_scale_back_industrialization
 		icon = GFX_MNE_scale_back_industrialization-645921
-		x = 18
+		x = 16
 		y = 5
 		cost = 8
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = MNE_liberate_the_markets  }
-	}
-
-	#Prioritize Motorization
-	focus = {
-		id = MNE_prioritize_motorization
-		icon = GFX_goal_generic_army_motorized
-		x = 32
-		y = 9
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = MNE_expand_bohemian_motorworks  }
-		mutually_exclusive = { focus = MNE_expand_tank_construction  }
-	}
-
-	#Expand Tank Construction
-	focus = {
-		id = MNE_expand_tank_construction
-		icon = GFX_focus_generic_tank_production
-		x = 30
-		y = 9
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = MNE_expand_bohemian_motorworks  }
+		prerequisite = { focus = MNE_side_with_the_agriculturalists  }
 	}
 
 	#Refurbish Imperial Railroads
 	focus = {
 		id = MNE_refurbish_imperial_railroads
 		icon = GFX_MNE_refurbish_imperial_railroads-645742
-		x = 25
+		x = 23
 		y = 6
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = MNE_imperial_autarky  }
+		prerequisite = { focus = MNE_side_with_the_industrialists  }
 	}
 
 	#Inject Cash into Vital Industries
 	focus = {
 		id = MNE_inject_cash_into_vital_industries
 		icon = GFX_focus_generic_aluminum
-		x = 22
+		x = 20
 		y = 6
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -317,12 +281,12 @@ focus_tree = {
 	focus = {
 		id = MNE_amotorizedfuture
 		icon = GFX_MNE_amotorizedfuture-646322
-		x = 29
+		x = 26
 		y = 6
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
-		prerequisite = { focus = MNE_imperial_autarky  }
+		prerequisite = { focus = MNE_side_with_the_industrialists  }
 		mutually_exclusive = { focus = MNE_refurbish_imperial_railroads  }
 	}
 
@@ -330,7 +294,7 @@ focus_tree = {
 	focus = {
 		id = MNE_construct_imperial_motorways
 		icon = GFX_MNE_construct_imperial_motorways-262129
-		x = 28
+		x = 26
 		y = 7
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -342,7 +306,7 @@ focus_tree = {
 	focus = {
 		id = MNE_increase_naval_hub_connections
 		icon = GFX_MNE_increase_naval_hub_connections-645974
-		x = 24
+		x = 22
 		y = 7
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
@@ -354,72 +318,12 @@ focus_tree = {
 	focus = {
 		id = MNE_standardize_railway_gauges
 		icon = GFX_MNE_standardize_railway_gauges-645972
-		x = 26
+		x = 24
 		y = 7
 		search_filters = {
 			FOCUS_FILTER_INDUSTRY
 		}
 		prerequisite = { focus = MNE_refurbish_imperial_railroads  }
-	}
-
-	#Secretly Support Paramilitary Groups
-	focus = {
-		id = MNE_secretly_support_paramilitary_groups
-		icon = GFX_focus_generic_army_tanks2
-		x = 15
-		y = 7
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = MNE_purge_disloyalty  }
-	}
-
-	#Work with Young Officers
-	focus = {
-		id = MNE_work_with_young_officers
-		icon = GFX_MNE_work_with_young_officers-262056
-		x = 31
-		y = 2
-		search_filters = {
-			FOCUS_FILTER_POLITICAL
-		}
-		prerequisite = { focus = MNE_gathering_the_opposition  }
-	}
-
-	#Expand Bohemian Motorworks
-	focus = {
-		id = MNE_expand_bohemian_motorworks
-		icon = GFX_MNE_expand_bohemian_motorworks-645991
-		x = 28
-		y = 8
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = MNE_construct_imperial_motorways  }
-	}
-
-	#Modernize Great War Railway Guns
-	focus = {
-		id = MNE_modernize_great_war_railway_guns
-		icon = GFX_MNE_modernize_great_war_railway_guns-645973
-		x = 26
-		y = 8
-		search_filters = {
-			FOCUS_FILTER_INDUSTRY
-		}
-		prerequisite = { focus = MNE_standardize_railway_gauges  }
-	}
-
-	#Recruit Cossack Units
-	focus = {
-		id = MNE_recruit_cossack_units
-		icon = GFX_MNE_recruit_cossack_units-262118
-		x = 13
-		y = 7
-		search_filters = {
-			FOCUS_FILTER_MANPOWER
-		}
-		prerequisite = { focus = MNE_purge_disloyalty  }
 	}
 
 }
