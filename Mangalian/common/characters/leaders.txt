@@ -148,7 +148,7 @@ characters = {
 		advisor = {
 			slot = political_advisor
 			idea_token = leaders_anton_denikin
-			cost = 
+			cost = 150
 			traits = { old_guard  staunch_monarchist }
 		}
 		field_marshal = {

@@ -1,6 +1,7 @@
 NDefines = {
 
 NGame = {
+NDefines.NGame = {
 	START_DATE = "1930.1.1.12",
 	END_DATE = "1949.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
@@ -17,6 +18,8 @@ NGame = {
 	AIR_LOG_TIMEOUT_HOURS = 24,						-- Data storring data
 	EVENT_TIMEOUT_DEFAULT = 13,						-- Default days before an event times out if not scripted
 	MISSION_REMOVE_FROM_INTERFACE_DEFAULT = 13,		-- Default days before a mission is removed from the interface after having failed or completed
+	STRICT_MAP_CHECKING = false,					-- Set to false to prevent hard crashes during map initialization
+	STRICT_MAP_CHECKING = false,					-- Set to false so the game attempts to load despite map errors
 	DECISION_ALERT_TIMEOUT_DAYS = 30,				-- Days left when player will be alerted about timing out events or decisions
 	FUEL_RESOURCE = "oil",							-- resource that will give country fuel
 	MAX_EFFECT_ITERATION = 1000,					-- maximum allowed iteration for loop effects

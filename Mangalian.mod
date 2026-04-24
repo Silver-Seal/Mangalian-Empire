@@ -3,7 +3,13 @@ tags={
 	"Alternative History"
 }
 name="Mangalian Empire"
+supported_version="1.18.*"
 picture="thumbnail.png"
+
+replace_path="history/states"
+replace_path="map/strategicregions"
+replace_path="map/supplynodes"
+
 replace_path="gfx/loadingscreens"
 replace_path="common/bookmarks"
 replace_path="history/countries"
@@ -15,5 +21,5 @@ replace_path="common/national_focus"
 replace_path="gfx/characters"
 replace_path="gfx/flags"
 replace_path="common/characters"
-supported_version="1.16.*"
+
 path="C:/Users/%user%/Documents/Paradox Interactive/Hearts of Iron IV/mod/Mangalian" 

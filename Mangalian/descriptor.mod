@@ -3,7 +3,13 @@ tags={
 	"Alternative History"
 }
 name="Mangalian Empire"
+supported_version="1.18.*"
 picture="thumbnail.png"
+
+replace_path="history/states"
+replace_path="map/strategicregions"
+replace_path="map/supplynodes"
+
 replace_path="gfx/loadingscreens"
 replace_path="common/bookmarks"
 replace_path="history/countries"
@@ -15,6 +21,7 @@ replace_path="common/national_focus"
 replace_path="gfx/characters"
 replace_path="gfx/flags"
 replace_path="common/characters"
+
 #replace_path="localisation/english"
 #replace_path="history/units"
 #replace_path="common/units"
@@ -26,4 +33,3 @@ replace_path="common/characters"
 #replace_path="common/scripted_diplomatic_actions"
 #replace_path="common/decisions"
 #replace_path="common/ideas"
-supported_version="1.16.*"
