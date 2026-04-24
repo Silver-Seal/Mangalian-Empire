@@ -1,4 +1,4 @@
-﻿l_english: 
+﻿﻿l_english: 
 SOV_siberian_strikes:0 "Siberian Strikes"
 SOV_siberian_strikes_desc:0 "The farmers in Siberia made prosperous by Stolypin are striking because of the loss of their land and how we are forcing them into factories."
 SOV_appoint_anton_denikin:0 "Appoint Anton Denikin"
@@ -33,8 +33,8 @@ SOV_finish_the_stolypin_reforms:0 "Finish the Stolypin Reforms"
 SOV_finish_the_stolypin_reforms_desc:0 "temp"
 SOV_begin_shipping_siberian_grain_back:0 "Begin Shipping Siberian Grain Back"
 SOV_begin_shipping_siberian_grain_back_desc:0 "temp"
-SOV_end_the_resetlement:0 "End the Resetlement"
-SOV_end_the_resetlement_desc:0 "temp"
+SOV_end_the_resetlement:0 "End the Resettlement"
+SOV_end_the_resetlement_desc:0 "The forced relocation programs have caused more friction than they are worth. By ending the state-mandated resettlements, we can begin to heal the rift with our rural populations."
 SOV_reflect:0 "Reflect"
 SOV_reflect_desc:0 "temp"
 SOV_rollbackstolypinsreforms:0 "Rollback Stolypin's Reforms"

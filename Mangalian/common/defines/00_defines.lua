@@ -4,7 +4,7 @@ NGame = {
 	START_DATE = "1930.1.1.12",
 	END_DATE = "1949.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 7.114,					-- Yes, we did the math
-	SAVE_VERSION = 24,								-- 1.15.0 (unnamed)
+	SAVE_VERSION = 27,								-- 1.18.0 Compatibility Update
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
 	LAG_DAYS_FOR_PAUSE = 25,						-- Days of client lag for pause of gamespeed.
@@ -143,7 +143,7 @@ NDiplomacy = {
 	TENSION_VOLUNTEER_FORCE_DIVISION = 0.2,			-- Amount of tension generated for each sent division
 	TENSION_DECAY_DAILY = 0.005,					-- Each day tension decays this much for Threat sources which are no longer relevant. Replaces TENSION_DECAY as of 1.12.0
 	TENSION_SIZE_FACTOR = 1.0,						-- All action tension values are multiplied by this value
-	TENSION_TIME_SCALE_START_DATE = "1936.1.1.12",	-- Starting at this date, the tension values will be scaled down (will be equal to 1 before that)
+	TENSION_TIME_SCALE_START_DATE = "1930.1.1.12",	-- Adjusted to match the mod's actual start date for 1.18 compatibility
 	TENSION_TIME_SCALE_MONTHLY_FACTOR = -0.005,		-- Timed tension scale will be modified by this amount starting with TENSION_TIME_SCALE_START_DATE
 	TENSION_TIME_SCALE_MIN = 0.25,					-- Timed tension scale won't decrease under this value
 	TENSION_GUARANTEE = -5,
@@ -334,7 +334,7 @@ NCountry = {
 	MAX_INTELLIGENCE_CONVOY_DATA_DEVIATION = 0.3,	-- (Old Intel) Max deviation in estimating enemy convoys amount ( 0.0 - 1.0 )
 	MAX_INTELLIGENCE_MANPOWER_DATA_DEVIATION = 0.4,	-- (Old Intel) Max deviation in estimating enemy total manpower amount ( 0.0 - 1.0 )
 	MAX_INTELLIGENCE_FIELDED_MANPOWER_DATA_DEVIATION = 0.35, -- (Old Intel) Max deviation in estimating enemy fielded manpower amount ( 0.0 - 1.0 )
-	MAX_INTELLIGENCE_INDUSTRY_DATA_DEVIATION = 0,4, -- (Old Intel) Max deviation in estimating enemy total industry
+	MAX_INTELLIGENCE_INDUSTRY_DATA_DEVIATION = 0.4, -- (Old Intel) Max deviation in estimating enemy total industry
 	MIN_MANPOWER_RATIO = 0.15,						-- Min manpower ratio to show manpower alert
 	ARMY_IMPORTANCE_FACTOR = 5.0,					-- Army factor for AI and calculations
 	TERRAIN_IMPORTANCE_FACTOR = 5.0,				-- Terrain base factor for state strategic value
@@ -1377,8 +1377,8 @@ NAir = {
 		0.0, -- NAVAL_MINES_SWEEPING
 		0.0, -- RECON
 		0.0, -- NAVAL_PATROL
-		0,0, -- BARRAGE
-		0,0, -- SAM
+		0.0, -- BARRAGE
+		0.0, -- SAM
 	},
 
 	MISSION_FUEL_COSTS = {  -- fuel cost per plane for each mission
@@ -1399,8 +1399,8 @@ NAir = {
 		1.0, -- RECON
 		1.0, -- NAVAL_PATROL
 		0.0, -- BARRAGE
-		0,0, -- NUCLEAR
-		0,0, -- SAM
+		0.0, -- NUCLEAR
+		0.0, -- SAM
 	},
 	MAX_FUEL_FLOW_MULT = 1.0, -- max fuel flow ratio for planes, which will be multiplied by supply
 
